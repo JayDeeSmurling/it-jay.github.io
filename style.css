@@ -1,0 +1,373 @@
+:root {
+    --bg-base: #0a0d12;
+    --bg-card: #0d1117;
+    --bg-header: #161b22;
+    --border-color: #21262d;
+    --border-highlight: #30363d;
+    
+    /* Paleta kolorów terminala i JSON */
+    --c-green: #3fb950;
+    --c-green-glow: rgba(63, 185, 80, 0.15);
+    --c-prompt: #58a6ff;
+    --c-key: #ffb454;
+    --c-string: #a5d6ff;
+    --c-punct: #7ee787;
+    --c-dim: #8b949e;
+    --c-text: #e6edf3;
+}
+
+/* Natywne przejścia stron dla przeglądarek wspierających View Transitions API */
+@view-transition {
+    navigation: auto;
+}
+
+::view-transition-old(root) {
+    animation: 500ms cubic-bezier(0.4, 0, 0.2, 1) both terminalFadeOut;
+}
+
+::view-transition-new(root) {
+    animation: 800ms cubic-bezier(0.22, 1, 0.36, 1) both terminalFadeIn;
+}
+
+body {
+    background-color: var(--bg-base);
+    color: var(--c-text);
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    background-image: 
+        linear-gradient(rgba(33, 38, 45, 0.25) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(33, 38, 45, 0.25) 1px, transparent 1px);
+    background-size: 28px 28px;
+    background-position: -1px -1px;
+    min-height: 100vh;
+    letter-spacing: -0.02em;
+}
+
+/* Leniwe, miękkie wejście całej strony */
+main {
+    animation: terminalFadeIn 0.85s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Wydłużone kaskadowe wyłanianie się kart terminalowych */
+.terminal-window {
+    animation: terminalCardEntry 0.9s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+}
+
+.terminal-window:nth-of-type(1) { animation-delay: 0.12s; }
+.terminal-window:nth-of-type(2) { animation-delay: 0.24s; }
+.terminal-window:nth-of-type(3) { animation-delay: 0.36s; }
+.terminal-window:nth-of-type(4) { animation-delay: 0.48s; }
+.terminal-window:nth-of-type(5) { animation-delay: 0.60s; }
+.terminal-window:nth-of-type(6) { animation-delay: 0.72s; }
+
+@keyframes terminalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes terminalFadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes terminalCardEntry {
+    from {
+        opacity: 0;
+        transform: translateY(24px) scale(0.985);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Monospace i składnia */
+.code-font, pre, code {
+    font-family: 'JetBrains Mono', monospace !important;
+}
+
+.jk { color: var(--c-key); }        /* JSON Key */
+.js { color: var(--c-string); }     /* JSON String */
+.jp { color: var(--c-punct); }      /* JSON Punctuation */
+.jc { color: var(--c-dim); }        /* Komentarz */
+.prompt-sign { color: var(--c-prompt); }
+.cmd-text { color: #fff; font-weight: 600; }
+
+/* 1. Navbar / Nagłówek */
+.top-wire-divider {
+    border-bottom: 1px solid var(--border-color);
+    background: rgba(10, 13, 18, 0.92);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    view-transition-name: main-header;
+}
+
+.brand-logo {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.brand-highlight {
+    color: var(--c-key);
+}
+
+.nav-link-custom {
+    color: var(--c-dim) !important;
+    font-size: 0.85rem;
+    padding: 0.45rem 0.8rem !important;
+    transition: color 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nav-link-custom:hover {
+    color: var(--c-green) !important;
+}
+
+/* Przełącznik języków */
+.lang-dropdown-btn {
+    background: var(--c-green-glow) !important;
+    border: 1px solid rgba(63, 185, 80, 0.35) !important;
+    color: var(--c-green) !important;
+    font-size: 0.8rem;
+    padding: 2px 10px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.status-dot-green {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--c-green);
+    box-shadow: 0 0 6px var(--c-green);
+}
+
+.lang-menu-dark {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+.lang-item-btn {
+    background: none;
+    border: none;
+    color: var(--c-text);
+    width: 100%;
+    text-align: left;
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.25s ease;
+}
+
+.lang-item-btn:hover, .lang-item-btn.active-lang {
+    background: rgba(63, 185, 80, 0.1);
+    color: var(--c-green);
+}
+
+/* 2. Karty Terminalowe / Styl Wizytówki */
+.terminal-window {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    transition: border-color 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.terminal-header {
+    background: var(--bg-header);
+    border-bottom: 1px solid var(--border-color);
+    padding: 7px 14px;
+    font-size: 0.75rem;
+}
+
+.traffic-dots {
+    display: flex;
+    gap: 6px;
+    margin-right: 12px;
+}
+
+.traffic-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot-close { background: #ff5f56; }
+.dot-min { background: #ffbd2e; }
+.dot-max { background: #27c93f; }
+
+.terminal-caret {
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    background: var(--c-green);
+    margin-left: 4px;
+    animation: blink 1.2s infinite steps(1);
+    vertical-align: middle;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+/* Zagnieżdżone bloki JSON */
+.json-block {
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+.json-row {
+    padding-left: 1.5rem;
+}
+
+/* Przyciski i elementy aktywne */
+.btn-cli {
+    background: #161b22;
+    border: 1px solid var(--border-color);
+    color: var(--c-text);
+    font-size: 0.82rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 4px;
+    transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-cli:hover {
+    border-color: var(--c-green);
+    color: var(--c-green);
+    background: #1c2128;
+    transform: translateY(-2px);
+}
+
+.btn-cli-green {
+    background: var(--c-green);
+    color: #040d06;
+    border: 1px solid var(--c-green);
+    font-weight: 700;
+}
+
+.btn-cli-green:hover {
+    background: #46cf59;
+    color: #000;
+}
+
+/* Pola formularza */
+.custom-input {
+    background-color: #04070a !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--c-text) !important;
+    font-size: 0.82rem;
+    border-radius: 4px;
+    transition: border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.custom-input:focus {
+    border-color: var(--c-green) !important;
+    box-shadow: 0 0 0 2px rgba(63, 185, 80, 0.2) !important;
+}
+
+/* Płynniejszy obrót ikony przy zwijaniu/rozwijaniu */
+button[aria-expanded="true"] .transition-icon {
+    transform: rotate(180deg);
+}
+.transition-icon {
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Płynne rozwijanie Bootstrap collapse */
+.collapsing {
+    transition: height 0.45s cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+/* Dostępność: wyłączenie animacji */
+@media (prefers-reduced-motion: reduce) {
+    main,
+    .terminal-window,
+    .btn-cli,
+    .transition-icon,
+    .collapsing,
+    ::view-transition-old(root),
+    ::view-transition-new(root) {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+/* Płynne przewijanie do kotwic */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Margines przewijania, aby przyklejony header nie zasłaniał modułu */
+.terminal-window[id] {
+    scroll-margin-top: 80px;
+}
+
+/* Podświetlenie modułu po kliknięciu linku z kotwicą */
+.terminal-window:target {
+    border-color: var(--c-green) !important;
+    box-shadow: 
+        0 0 0 1px var(--c-green),
+        0 0 28px rgba(63, 185, 80, 0.28),
+        0 12px 32px rgba(0, 0, 0, 0.6) !important;
+    animation: targetPulse 1.8s ease-out;
+}
+
+/* Zielony akcent nagłówka okna aktywnego modułu */
+.terminal-window:target .terminal-header {
+    background: #19241d !important;
+    border-bottom-color: rgba(63, 185, 80, 0.4) !important;
+}
+
+/* Efekt pulsowania ramki po przejściu do modułu */
+@keyframes targetPulse {
+    0% {
+        box-shadow: 
+            0 0 0 2px var(--c-green),
+            0 0 38px rgba(63, 185, 80, 0.55),
+            0 12px 32px rgba(0, 0, 0, 0.6);
+    }
+    50% {
+        box-shadow: 
+            0 0 0 1px var(--c-green),
+            0 0 18px rgba(63, 185, 80, 0.2),
+            0 12px 32px rgba(0, 0, 0, 0.6);
+    }
+    100% {
+        box-shadow: 
+            0 0 0 1px var(--c-green),
+            0 0 28px rgba(63, 185, 80, 0.28),
+            0 12px 32px rgba(0, 0, 0, 0.6);
+    }
+}

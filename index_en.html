@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- SEO Basic -->
+        <title>IT-JAY | Cybersecurity &amp; IT Support for Small Businesses</title>
+        <meta
+            name="description"
+            content="Professional cybersecurity awareness training, ongoing &amp; on-demand IT support, web development, NIS2/GDPR audits, and cloud infrastructure in Belgium (Aalst, Brussels, Ghent)." />
+        <meta
+            name="keywords"
+            content="cybersecurity, IT support, small business, helpdesk, security audit, phishing protection, NIS2, web development, Microsoft 365, Aalst, Brussels, Ghent" />
+        <meta name="author" content="IT-JAY" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://it-jay.be/index_en.html" />
+
+        <!-- Language Versions (Hreflang) -->
+        <link rel="alternate" hreflang="pl" href="https://it-jay.be/index_pl.html" />
+        <link rel="alternate" hreflang="nl" href="https://it-jay.be/index_nl.html" />
+        <link rel="alternate" hreflang="en" href="https://it-jay.be/index_en.html" />
+        <link rel="alternate" hreflang="x-default" href="https://it-jay.be/" />
+
+        <!-- Open Graph / Facebook / LinkedIn -->
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:url" content="https://it-jay.be/index_en.html" />
+        <meta property="og:site_name" content="IT-JAY" />
+        <meta property="og:title" content="IT-JAY | Cybersecurity &amp; IT Support for Small Businesses" />
+        <meta
+            property="og:description"
+            content="We protect small businesses from ransomware, phishing, and downtime. Comprehensive IT support, web development, training, and security audits." />
+        <meta property="og:image" content="https://it-jay.be/og-image.jpg" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="IT-JAY | Cybersecurity &amp; IT Support for Small Businesses" />
+        <meta
+            name="twitter:description"
+            content="We protect small businesses from ransomware, phishing, and downtime. Check out our IT support and training offer." />
+        <meta name="twitter:image" content="https://it-jay.be/og-image.jpg" />
+
+        <!-- Interface Color -->
+        <meta name="theme-color" content="#0a0d12" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet" />
+
+        <!-- Bootstrap 5 & Font Awesome -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- 1. GÓRNY PASEK NAGŁÓWKA -->
+        <header class="top-wire-divider">
+            <div class="container-xl">
+                <nav class="navbar navbar-expand-lg navbar-dark px-0 py-2">
+                    <!-- Brand -->
+                    <a class="brand-logo" href="index.html">
+                        <span class="prompt-sign">$</span>
+                        <span>IT-JAY<span class="brand-highlight">.BE</span></span>
+                    </a>
+
+                    <!-- Mobile toggle -->
+                    <button
+                        class="navbar-toggler border-0 shadow-none text-white"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#itjayNavbarCollapse">
+                        <i class="fa-solid fa-bars fs-5"></i>
+                    </button>
+
+                    <!-- Menu Links & Dropdown -->
+                    <div class="collapse navbar-collapse justify-content-end" id="itjayNavbarCollapse">
+                        <ul class="navbar-nav align-items-lg-center gap-lg-1 my-3 my-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-custom" href="#szkolenia">./training</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-custom" href="#wsparcie-it">./it-support</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-custom" href="#strony-www">./web development</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-custom" href="#infrastruktura">./infrastructure</a>
+                            </li>
+
+                            <!-- Przełącznik języka -->
+                            <li class="nav-item dropdown ms-lg-2 my-2 my-lg-0">
+                                <button
+                                    class="btn lang-dropdown-btn dropdown-toggle shadow-none"
+                                    type="button"
+                                    id="langSelectorMenu"
+                                    data-bs-toggle="dropdown">
+                                    <span class="status-dot-green"></span>
+                                    <span id="currentLangDisplay">EN</span>
+                                </button>
+                                <ul
+                                    class="dropdown-menu dropdown-menu-end lang-menu-dark"
+                                    aria-labelledby="langSelectorMenu">
+                                    <li>
+                                        <a
+                                            class="lang-item-btn active-lang text-decoration-none"
+                                            href="index_pl.html"
+                                            data-lang="PL">
+                                            <span>🇵🇱 Polski</span>
+                                            <small class="opacity-75">PL</small>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="lang-item-btn text-decoration-none"
+                                            href="index_nl.html"
+                                            data-lang="NL">
+                                            <span>🇳🇱 Nederlands</span>
+                                            <small class="opacity-75">NL</small>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="lang-item-btn text-decoration-none"
+                                            href="index_en.html"
+                                            data-lang="EN">
+                                            <span>🇬🇧 English</span>
+                                            <small class="opacity-75">EN</small>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item ms-lg-2">
+                                <a href="#kontakt" class="btn btn-cli py-1 px-3">
+                                    <span class="prompt-sign">&gt;</span> Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="py-4 py-md-5">
+            <div class="container-xl" style="max-width: 980px">
+                <!-- 1. HERO TERMINAL (Styl wizytówki) -->
+                <section class="terminal-window mb-4 mb-md-5">
+                    <div class="terminal-header d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <div class="traffic-dots">
+                                <span class="traffic-dot dot-close"></span>
+                                <span class="traffic-dot dot-min"></span>
+                                <span class="traffic-dot dot-max"></span>
+                            </div>
+                            <span class="text-secondary">it-jay@terminal:~ (zsh)</span>
+                        </div>
+                        <div class="d-none d-sm-block text-secondary" style="font-size: 0.72rem">
+                            status: 200 OK [TLS 1.3 encrypted] // rev: 2026.1
+                        </div>
+                    </div>
+
+                    <div class="p-4 p-md-5">
+                        <!-- CLI whoami -->
+                        <div class="mb-3">
+                            <span class="prompt-sign">$</span> <span class="cmd-text">whoami</span><br />
+                            <span class="text-secondary">&gt; IT-JAY // Cybersecurity &amp; IT Support</span>
+                        </div>
+
+                        <!-- CLI it-jay --profile -->
+                        <div class="mb-4">
+                            <span class="prompt-sign">$</span> <span class="cmd-text">it-jay --profile</span>
+                            <div class="json-block mt-2">
+                                <span class="jp">{</span><br />
+                                <div class="json-row">
+                                    <p>
+                                        <span class="jk">"role"</span><span class="jp">:</span>
+                                        <span class="js">"IT Architecture &amp; Cybersecurity"</span
+                                        ><span class="jp">,</span><br />
+                                    </p>
+                                    <p>
+                                        <span class="jk">"headline"</span><span class="jp">:</span>
+                                        <span class="js">"Cybersecurity and IT support for your business."</span
+                                        ><span class="jp">,</span><br />
+                                    </p>
+                                    <p>
+                                        <span class="jk">"mission"</span><span class="jp">:</span>
+                                        <span class="js"
+                                            >"We protect small businesses from ransomware, phishing, and downtime. We
+                                            provide staff training, on-demand &amp; ongoing IT support, as well as
+                                            security and compliance audits."</span
+                                        ><span class="jp">,</span><br />
+                                    </p>
+                                    <p>
+                                        <span class="jk">"location"</span><span class="jp">:</span>
+                                        <span class="js">"Aalst, Brussels, Ghent"</span><br />
+                                    </p>
+                                </div>
+                                <span class="jp">}</span>
+                            </div>
+                        </div>
+
+                        <!-- CLI prompt z kursorem i CTA -->
+                        <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 pt-2">
+                            <div>
+                                <span class="prompt-sign">$</span> ./explore-services.sh
+                                <span class="terminal-caret"></span>
+                            </div>
+                            <a href="#szkolenia" class="btn btn-cli btn-cli-green">
+                                <i class="fa-solid fa-terminal me-1"></i> Explore Our Services
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. BLOK 1: Szkolenia z cyberbezpieczeństwa -->
+                <section id="szkolenia" class="terminal-window mb-3 mb-md-4">
+                    <div class="terminal-header d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <div class="traffic-dots">
+                                <span class="traffic-dot dot-close"></span>
+                                <span class="traffic-dot dot-min"></span>
+                                <span class="traffic-dot dot-max"></span>
+                            </div>
+                            <span class="prompt-sign">$</span> cat module_01_training.json
+                        </div>
+                        <div class="d-none d-sm-block text-secondary" style="font-size: 0.72rem">training module</div>
+                    </div>
+
+                    <div class="p-4">
+                        <div class="row align-items-center g-3">
+                            <div class="col-md-8">
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <i class="fa-solid fa-user-shield text-success"></i>
+                                    <span class="code-font small text-uppercase fw-semibold">
+                                        <span class="text-warning">"Module 01 // Cyber Awareness":</span>
+                                        <span class="text-white"> Cybersecurity Training</span>
+                                    </span>
+                                </div>
+                                <p class="text-secondary small mb-0">
+                                    The human factor accounts for the majority of data breaches. IT-JAY teaches
+                                    employees how to identify phishing, work securely from home, manage passwords, and
+                                    respond to incidents based on real-world scenarios.
+                                </p>
+                            </div>
+                            <div class="col-md-4 text-md-end">
+                                <button
+                                    type="button"
+                                    class="btn btn-cli text-warning w-100 w-md-auto justify-content-center"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#szczegolySzkolenia"
+                                    aria-expanded="false"
+                                    aria-controls="szczegolySzkolenia">
+                                    <span>{...} Program details</span>
+                                    <i class="fa-solid fa-chevron-down ms-1 transition-icon"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Rozwijana treść JSON -->
+                        <div class="collapse" id="szczegolySzkolenia">
+                            <div class="json-block mt-3">
+                                <span class="jc">// Workshop and simulation program:</span><br />
+                                <span class="jp">{</span><br />
+                                <div class="json-row">
+                                    <p>
+                                        <span class="jk">"01_phishing"</span><span class="jp">:</span>
+                                        <span class="js"
+                                            >"Recognizing deceptive emails, malicious links, domain spoofing, and
+                                            psychological manipulation (pretexting, vishing, smishing, etc.)."</span
+                                        ><span class="jp">,</span>
+                                    </p>
+                                    <p>
+                                        <span class="jk">"02_credentials"</span><span class="jp">:</span>
+                                        <span class="js"
+                                            >"Implementing password managers, multi-factor authentication (MFA), and
+                                            safe practices on mobile devices and while traveling."</span
+                                        ><span class="jp">,</span><br />
+                                    </p>
+                                    <p>
+                                        <span class="jk">"03_incident_response"</span><span class="jp">:</span>
+                                        <span class="js"
+                                            >"Step by step: what to do when clicking a malicious attachment or
+                                            experiencing a data leak – reporting escalation to IT and account isolation.
+                                            Should an incident be reported to the authorities?"</span
+                                        ><span class="jp">,</span><br />
+                                    </p>
+                                    <p>
+                                        <span class="jk">"duration"</span><span class="jp">:</span>
+                                        <span class="js">"2-4h (on-site workshop, optionally online)"</span><br />
+                                    </p>
+                                </div>
+                                <span class="jp">}</span>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 pt-2">
+                            <div>
+                                <span class="prompt-sign">$</span> ./explore-training.sh
+                                <span class="terminal-caret"></span>
+                            </div>
+                            <a href="#kontakt" class="btn btn-cli btn-cli-green">
+                                <i class="fa-solid fa-terminal me-1"></i> Request a Training Quote
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. BLOK 2: Wsparcie IT dla małych biznesów -->
+                <section id="wsparcie-it" class="terminal-window mb-3 mb-md-4">
+                    <div class="terminal-header d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <div class="traffic-dots">
+                                <span class="traffic-dot dot-close"></span>
+                                <span class="traffic-dot dot-min"></span>
+                                <span class="traffic-dot dot-max"></span>
+                            </div>
+                            <span class="prompt-sign">$</span> cat module_02_it_support.json
+                        </div>
+                        <div class="d-none d-sm-block text-secondary" style="font-size: 0.72rem">support module</div>
+                    </div>
+                    <div class="p-4">
+                        <div class="row align-items-center g-3">
+                            <div class="col-md-8">
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <i class="fa-solid fa-headset text-success"></i>
+
+                                    <span class="code-font small text-uppercase fw-semibold">
+                                        <span class="text-warning">"Module 02 // IT Support":</span>
+                                        <span class="text-white"> IT Support for Small Businesses</span>
+                                    </span>
+                                </div>
+
+                                <p class="text-secondary small mb-0">
+                                    An external IT department without full-time payroll costs. IT-JAY ensures fast
+                                    response times to technical assistance requests.
+                                </p>
+                            </div>
+                            <div class="col-md-4 text-md-end">
+                                <button
+                                    type="button"
+                                    class="btn btn-cli text-warning w-100 w-md-auto justify-content-center"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#szczegolyWsparcia"
+                                    aria-expanded="false"
+                                    aria-controls="szczegolyWsparcia">
+                                    <span>{...} Support details</span>
+                                    <i class="fa-solid fa-chevron-down ms-1 transition-icon"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Rozwijana treść JSON -->
+                        <div class="collapse" id="szczegolyWsparcia">
+                            <div class="json-block mt-3">
+                                <span class="jc">// Scope of ongoing technical care:</span><br />
+                                <span class="jp">{</span><br />
+                                <div class="json-row">
+                                    <p>
+                                        <span class="jk">"01_helpdesk"</span><span class="jp">:</span>
+                                        <span class="js"
+                                            >"Daily technical support for employees, workstation setup (Windows/macOS),
+                                            troubleshooting, and Microsoft 365 / Google Workspace administration."</span
+                                        ><span class="jp">,</span><br />
+                                    </p>
+                                    <p>
+                                        <span class="jk">"02_backups"</span><span class="jp">:</span>
+                                        <span class="js"
+                                            >"Automated, encrypted backups of workstations and databases in the cloud
+                                            with regular recovery drills against system failures or ransomware
+                                            attacks."</span
+                                        ><span class="jp">,</span><br />
+                                    </p>
+                                    <p>
+                                        <span class="jk">"03_network_security"</span><span class="jp">:</span>
+                                        <span class="js"
+                                            >"Router and firewall management, secure VPN configuration for remote work,
+                                            security updates, and antivirus protection."</span
+                                        ><span class="jp">,</span><br />
+                                    </p>
+                                    <span class="jk">"model"</span><span class="jp">:</span>
+                                    <span class="js">"On-site or remote support"</span><br />
+                                </div>
+                                <span class="jp">}</span>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 pt-2">
+                            <div>
+                                <span class="prompt-sign">$</span> ./explore-support.sh
+                                <span class="terminal-caret"></span>
+                            </div>
+                            <a href="#kontakt" class="btn btn-cli btn-cli-green">
+                                <i class="fa-solid fa-terminal me-1"></i> Let's Talk
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. BLOK 3: Strony WWW -->
+                <section id="strony-www" class="terminal-window mb-3 mb-md-4">
+                    <div class="terminal-header d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <div class="traffic-dots">
+                                <span class="traffic-dot dot-close"></span>
+                                <span class="traffic-dot dot-min"></span>
+                                <span class="traffic-dot dot-max"></span>
+                            </div>
+                            <span class="prompt-sign">$</span> cat module_03_tworzenie_stron.json
+                        </div>
+                        <div class="d-none d-sm-block text-secondary" style="font-size: 0.72rem">web design module</div>
+                    </div>
+                    <div class="p-4">
+                        <div class="row align-items-center g-3">
+                            <div class="col-md-8">
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <i class="fa-solid fa-laptop-code text-success"></i>
+
+                                    <span class="code-font small text-uppercase fw-semibold">
+                                        <span class="text-warning">"Module 03 // Websites":</span>
+                                        <span class="text-white"> Website Development</span>
+                                    </span>
+                                </div>
+
+                                <p class="text-secondary small mb-0">
+                                    We build modern websites tailored to your business. We take care of everything from
+                                    scratch – from a unique graphic design and clear structure to complete deployment.
+                                    Depending on your needs, we deliver a lightning-fast static website or a
+                                    comprehensive dynamic platform with convenient content management.
+                                </p>
+                            </div>
+                            <div class="col-md-4 text-md-end">
+                                <button
+                                    type="button"
+                                    class="btn btn-cli text-warning w-100 w-md-auto justify-content-center"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#szczegolyStron"
+                                    aria-expanded="false"
+                                    aria-controls="szczegolyStron">
+                                    <span>{...} Offer details</span>
+                                    <i class="fa-solid fa-chevron-down ms-1 transition-icon"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Rozwijana treść JSON -->
+                        <div class="collapse" id="szczegolyStron">
+                            <div class="json-block mt-3">
+                                <span class="jc">// How our collaboration works step by step:</span><br />
+                                <span class="jp">{</span><br />
+                                <div class="json-row">
+                                    <p>
+                                        <span class="jk">"01_graphic_design"</span><span class="jp">:</span>
+                                        <span class="js"
+                                            >"We design from scratch – creating a consistent, aesthetic visual identity
+                                            fitted to your brand and intuitive for visitors on any device."</span
+                                        ><span class="jp">,</span><br />
+                                    </p>
+                                    <p>
+                                        <span class="jk">"02_static_websites"</span><span class="jp">:</span>
+                                        <span class="js"
+                                            >"Ultra-fast, lightweight, and secure landing pages and business cards that
+                                            load in an instant and rank exceptionally well on Google."</span
+                                        ><span class="jp">,</span><br />
+                                    </p>
+                                    <p>
+                                        <span class="jk">"03_dynamic_websites"</span><span class="jp">:</span>
+                                        <span class="js"
+                                            >"Solutions featuring a content management panel, blog, or interactive forms
+                                            when you need to publish regular updates and materials."</span
+                                        ><span class="jp">,</span><br />
+                                    </p>
+                                    <span class="jk">"04_support"</span><span class="jp">:</span>
+                                    <span class="js"
+                                        >"Guidance with domain selection, hosting, and technical maintenance
+                                        post-launch"</span
+                                    ><br />
+                                </div>
+                                <span class="jp">}</span>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 pt-2">
+                            <div>
+                                <span class="prompt-sign">$</span> ./explore-webdesign.sh
+                                <span class="terminal-caret"></span>
+                            </div>
+                            <a href="#kontakt" class="btn btn-cli btn-cli-green">
+                                <i class="fa-solid fa-terminal me-1"></i> Let's Discuss Your Website
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 5. BLOK 4: Bezpieczna infrastruktura i chmura -->
+                <section id="infrastruktura" class="terminal-window mb-4 mb-md-5">
+                    <div class="terminal-header d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <div class="traffic-dots">
+                                <span class="traffic-dot dot-close"></span>
+                                <span class="traffic-dot dot-min"></span>
+                                <span class="traffic-dot dot-max"></span>
+                            </div>
+                            <span class="prompt-sign">$</span> cat module_04_cloud.json
+                        </div>
+                        <div class="d-none d-sm-block text-secondary" style="font-size: 0.72rem">
+                            data security module
+                        </div>
+                    </div>
+
+                    <div class="p-4">
+                        <div class="row align-items-center g-3">
+                            <div class="col-md-8">
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <i class="fa-solid fa-network-wired text-success"></i>
+
+                                    <span class="code-font small text-uppercase fw-semibold">
+                                        <span class="text-warning">"Module 04 // Cloud":</span>
+                                        <span class="text-white"> Cloud Infrastructure &amp; Networks</span>
+                                    </span>
+                                </div>
+
+                                <p class="text-secondary small mb-0">
+                                    Architecting and migrating to secure Microsoft 365 / Google Workspace environments.
+                                    Deploying UTM/Firewall protection, LAN/Wi-Fi network segmentation, and 2FA/MFA
+                                    authentication.
+                                </p>
+                            </div>
+                            <div class="col-md-4 text-md-end">
+                                <button
+                                    type="button"
+                                    class="btn btn-cli text-warning w-100 w-md-auto justify-content-center"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#szczegolyInfrastruktury"
+                                    aria-expanded="false"
+                                    aria-controls="szczegolyInfrastruktury">
+                                    <span>{...} Architecture details</span>
+                                    <i class="fa-solid fa-chevron-down ms-1 transition-icon"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Rozwijana treść JSON -->
+                        <div class="collapse" id="szczegolyInfrastruktury">
+                            <div class="json-block mt-3">
+                                <span class="jc">// Architecture &amp; deployments:</span><br />
+                                <span class="jp">{</span><br />
+                                <div class="json-row">
+                                    <p>
+                                        <span class="jk">"01_cloud_m365_google"</span><span class="jp">:</span>
+                                        <span class="js"
+                                            >"Secure migration of emails and files, cloud service hardening."</span
+                                        ><span class="jp">,</span><br />
+                                    </p>
+                                    <p>
+                                        <span class="jk">"02_segmentation"</span><span class="jp">:</span>
+                                        <span class="js"
+                                            >"Isolating guest networks and IoT devices (cameras, printers) from office
+                                            workstations and other network infrastructure."</span
+                                        ><span class="jp">,</span><br />
+                                    </p>
+                                    <p>
+                                        <span class="jk">"03_zero_trust_vpn"</span><span class="jp">:</span>
+                                        <span class="js"
+                                            >"Configuring encrypted VPN tunnels (WireGuard / IPsec) with mandatory
+                                            multi-factor authentication (MFA) and Zero-Trust policies."</span
+                                        ><span class="jp">,</span><br />
+                                    </p>
+                                    <p>
+                                        <span class="jk">"04_documentation"</span><span class="jp">:</span>
+                                        <span class="js"
+                                            >"Complete post-implementation documentation and network topology
+                                            diagrams"</span
+                                        ><br />
+                                    </p>
+                                </div>
+                                <span class="jp">}</span>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 pt-2">
+                            <div>
+                                <span class="prompt-sign">$</span> ./explore-cloud.sh
+                                <span class="terminal-caret"></span>
+                            </div>
+                            <a href="#kontakt" class="btn btn-cli btn-cli-green">
+                                <i class="fa-solid fa-terminal me-1"></i> Let's Talk About Cloud
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 6. DUŻY BLOK KONTAKTOWY (Styl contact.json) -->
+                <section id="kontakt" class="terminal-window mb-4">
+                    <div class="terminal-header d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <div class="traffic-dots">
+                                <span class="traffic-dot dot-close"></span>
+                                <span class="traffic-dot dot-min"></span>
+                                <span class="traffic-dot dot-max"></span>
+                            </div>
+                            <span class="prompt-sign">$</span> cat contact_form.json
+                        </div>
+                        <div class="d-none d-sm-block text-secondary" style="font-size: 0.72rem">
+                            INITIALIZE_CONNECTION
+                        </div>
+                    </div>
+
+                    <div class="p-4 p-md-5">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-5">
+                                <h2 class="h5 fw-bold text-white mb-2">Get in touch with IT-JAY</h2>
+                                <p class="text-secondary small mb-3">
+                                    We respond within 1 business day. We will conduct a free 15-minute initial needs
+                                    assessment for your business.
+                                </p>
+
+                                <!-- JSON jak na wizytówce -->
+                                <div class="json-block mb-3">
+                                    <span class="jp">{</span><br />
+                                    <div class="json-row">
+                                        <p>
+                                            <span class="jk">"GSM"</span><span class="jp">:</span>
+                                            <span class="js">"+32 469 79 96 89"</span><span class="jp">,</span><br />
+                                        </p>
+                                        <p>
+                                            <span class="jk">"email"</span><span class="jp">:</span>
+                                            <span class="js">"info@it-jay.be"</span><span class="jp">,</span><br />
+                                        </p>
+                                        <p>
+                                            <span class="jk">"web"</span><span class="jp">:</span>
+                                            <span class="js">"https://www.it-jay.be"</span><span class="jp">,</span
+                                            ><br />
+                                        </p>
+                                        <p>
+                                            <span class="jk">"blog (in English)"</span><span class="jp">:</span>
+                                            <span class="js">"https://www.itsnotabug.net"</span><span class="jp">,</span
+                                            ><br />
+                                        </p>
+                                        <p>
+                                            <span class="jk">"location"</span><span class="jp">:</span>
+                                            <span class="js">"Aalst, Brussels, Ghent"</span><br />
+                                        </p>
+                                    </div>
+                                    <span class="jp">}</span>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-7">
+                                <div
+                                    id="contactFormAlert"
+                                    class="alert d-none py-2 px-3 small rounded mb-3"
+                                    role="alert"></div>
+
+                                <form
+                                    id="itjayContactForm"
+                                    class="row g-3"
+                                    action="https://api.web3forms.com/submit"
+                                    method="POST"
+                                    novalidate>
+                                    <input
+                                        type="hidden"
+                                        name="access_key"
+                                        value="34efe272-5af3-4724-82ff-4fc9fb1bc097" />
+
+                                    <div class="col-md-6">
+                                        <label for="contactFullName" class="form-label code-font small text-secondary">
+                                            <span class="jk">"full_name"</span>:
+                                        </label>
+                                        <input
+                                            type="text"
+                                            class="form-control custom-input"
+                                            id="contactFullName"
+                                            name="contactFullName"
+                                            placeholder="John Doe (Acme Corp)"
+                                            required />
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label
+                                            for="contactEmailAddress"
+                                            class="form-label code-font small text-secondary">
+                                            <span class="jk">"email"</span>:
+                                        </label>
+                                        <input
+                                            type="email"
+                                            class="form-control custom-input"
+                                            id="contactEmailAddress"
+                                            name="contactEmailAddress"
+                                            placeholder="john@yourcompany.com"
+                                            required />
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label
+                                            for="contactSelectedService"
+                                            class="form-label code-font small text-secondary">
+                                            <span class="jk">"topic"</span>:
+                                        </label>
+                                        <select
+                                            class="form-select custom-input"
+                                            id="contactSelectedService"
+                                            name="contactSelectedService">
+                                            <option value="Cybersecurity Training" selected>
+                                                Cybersecurity Training
+                                            </option>
+                                            <option value="IT Support for Small Business">
+                                                IT Support for Small Business (Helpdesk &amp; Care)
+                                            </option>
+                                            <option value="Website">Website</option>
+                                            <option value="Infrastructure and Cloud">
+                                                Infrastructure, VPN, Microsoft 365
+                                            </option>
+                                            <option value="Other Urgent Matter">
+                                                Other Inquiry / Security Incident
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label
+                                            for="contactMessageBody"
+                                            class="form-label code-font small text-secondary">
+                                            <span class="jk">"message"</span>:
+                                        </label>
+                                        <textarea
+                                            class="form-control custom-input"
+                                            id="contactMessageBody"
+                                            name="contactMessageBody"
+                                            rows="3"
+                                            placeholder="Briefly describe your requirements..."></textarea>
+                                    </div>
+
+                                    <div class="col-12 pt-2">
+                                        <button
+                                            type="submit"
+                                            id="submitFormButton"
+                                            class="btn btn-cli btn-cli-green w-100 py-2 d-flex align-items-center justify-content-center gap-2">
+                                            <i class="fa-solid fa-paper-plane"></i>
+                                            <span> &gt;_ send --target "IT-JAY"</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Stopka -->
+                <footer
+                    class="d-flex flex-column flex-sm-row justify-content-between align-items-center py-3 text-secondary small border-top border-dark">
+                    <div>© 2026 IT-JAY | All rights reserved.</div>
+                    <div class="d-flex gap-3 mt-2 mt-sm-0">
+                        <a href="privacy-policy.html" class="text-secondary text-decoration-none hover-white"
+                            >Privacy Policy</a
+                        >
+                        <span>•</span>
+                        <a href="terms-and-conditions.html" class="text-secondary text-decoration-none hover-white"
+                            >General Terms</a
+                        >
+                    </div>
+                </footer>
+            </div>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
