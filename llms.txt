@@ -1,0 +1,30 @@
+# IT-JAY
+
+> IT Architecture, Cybersecurity, Web Development & IT Support for Small Businesses based in Belgium (Erpe-Mere / Aalst, Brussels, Ghent).
+
+IT-JAY is an IT consulting and services firm founded by Jędrzej Dec. The company specializes in cyber awareness training, outsourced IT helpdesk/support for small businesses (SMEs/kmo's), custom web development (static and dynamic websites), cloud migration (Microsoft 365 / Google Workspace), and network security (Zero-Trust VPN, firewalls).
+
+## Core Services
+
+- [Cybersecurity Training](https://it-jay.be/index_en.html#szkolenia): Employee awareness workshops covering phishing detection, password management, MFA, and incident response procedures.
+- [IT Support & Helpdesk](https://it-jay.be/index_en.html#wsparcie-it): Ongoing and on-demand workstation maintenance (Windows/macOS), automated encrypted backups, network administration, and Microsoft 365 support.
+- [Web Development](https://it-jay.be/index_en.html#strony-www): Bespoke design, high-performance static websites, and content-managed dynamic platforms.
+- [Cloud & Network Infrastructure](https://it-jay.be/index_en.html#infrastruktura): Cloud migration, LAN/Wi-Fi segmentation, Zero-Trust VPN tunnels (WireGuard/IPsec), and infrastructure documentation.
+
+## Company Details
+
+- Name: IT-JAY, Jędrzej Dec
+- Address: Hofkensweg 42, 9420 Erpe-Mere, Belgium
+- CBE / BTW: BE 0661.654.321
+- Email: info@it-jay.be
+- Website: https://it-jay.be
+- Tech Blog: https://www.itsnotabug.net
+
+## Legal & Compliance
+
+- [Privacy Policy (EN)](https://it-jay.be/privacy-policy.html): GDPR policy, data processing terms, Zero-Knowledge APFS backup architecture, and retention rules.
+- [Polityka Prywatności (PL)](https://it-jay.be/polityka-prywatnosci.html): Zasady przetwarzania danych osobowych zgodnie z RODO.
+- [Privacyverklaring (NL)](https://it-jay.be/privacyverklaring.html): Privacybeleid conform de Algemene Verordening Gegevensbescherming (AVG).
+- [Terms & Conditions (EN)](https://it-jay.be/terms-and-conditions.html): General business terms, NACE module terms, liability caps, and Belgian jurisdiction.
+- [Warunki Ogólne (PL)](https://it-jay.be/warunki-ogolne.html): Ogólne warunki świadczenia usług i moduły branżowe.
+- [Algemene Voorwaarden (NL)](https://it-jay.be/algemene-voorwaarden.html): Algemene handelsvoorwaarden en specifieke clausules.

@@ -1,0 +1,19 @@
+# AI Policy for it-jay.be
+User-agent: *
+Allow: /
+
+# Canonical source and context
+Contact: info@it-jay.be
+Entity: IT-JAY, Jędrzej Dec
+Location: Erpe-Mere, Belgium
+Description: Cybersecurity, IT support, cloud architecture, and web development for SMEs.
+
+# Documentation for LLMs
+Context: https://it-jay.be/llms.txt
+Sitemap: https://it-jay.be/sitemap.xml
+
+# Permissions
+Training: Disallowed
+Search: Allowed
+Inference: Allowed
+Data-Mining: Disallowed
