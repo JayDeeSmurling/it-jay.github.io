@@ -132,7 +132,7 @@
 
         <main class="py-4 py-md-5">
             <div class="container-xl" style="max-width: 980px">
-                <!-- HERO DOKUMENTU -->
+                <!-- HERO SECTION -->
                 <section class="terminal-window mb-4">
                     <div class="terminal-header d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -150,17 +150,33 @@
 
                     <div class="p-4 p-md-5">
                         <div class="mb-3">
-                            <span class="prompt-sign">$</span> <span class="cmd-text">cat general_terms.md</span>
+                            <span class="prompt-sign">$</span> <span class="cmd-text">cat terms_and_conditions.md</span>
                         </div>
-                        <h1 class="display-6 fw-bold text-white mb-2">General Terms &amp; Conditions</h1>
-                        <p class="text-secondary small mb-4">
-                            Rules of service provision, rights and obligations of parties, payment procedures, and
-                            limitations of liability in B2B and B2C relationships.
+                        <h1 class="display-6 fw-bold text-white mb-2">Terms and Conditions</h1>
+                        <p class="text-secondary small mb-3">
+                            Executive summary of cooperation terms, B2B/B2C rights, warranties, and liability
+                            limitations under Belgian law.
                         </p>
 
-                        <!-- Blok danych podmiotu -->
+                        <!-- Warning banner -->
+                        <div class="p-3 mb-4 rounded border border-warning bg-dark d-flex align-items-start gap-3">
+                            <i class="fa-solid fa-circle-info text-warning fs-5 mt-1"></i>
+                            <div class="small">
+                                <span class="text-warning fw-semibold font-monospace">[NOTICE // THIS IS A SUMMARY]</span><br />
+                                <span class="text-light">
+                                    The below content is <strong>just a summary per theme</strong> of our Terms and Conditions. The full and binding version (in Dutch) can be downloaded at the end of this page.
+                                </span>
+                                <div class="mt-2">
+                                    <a href="#downloads" class="text-warning text-decoration-none fw-medium hover-underline font-monospace">
+                                        <i class="fa-solid fa-file-pdf me-1"></i>&gt; Go directly to a PDF download (in Dutch)
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Enterprise JSON Info Block -->
                         <div class="json-block mb-3">
-                            <span class="jc">// Contractor enterprise details</span><br />
+                            <span class="jc">// Service Provider Information</span><br />
                             <span class="jp">{</span><br />
                             <div class="json-row">
                                 <p>
@@ -168,12 +184,12 @@
                                     <span class="js">"IT-JAY, Jędrzej Dec"</span><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"address"</span><span class="jp">:</span>
+                                    <span class="jk">"registered_office"</span><span class="jp">:</span>
                                     <span class="js">"Hofkensweg 42, 9420 Erpe-Mere, Belgium"</span
                                     ><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"cbe_vat"</span><span class="jp">:</span>
+                                    <span class="jk">"kbo_vat"</span><span class="jp">:</span>
                                     <span class="js">"BE 0661.654.321"</span><span class="jp">,</span>
                                 </p>
                                 <p>
@@ -181,7 +197,7 @@
                                     <span class="js">"info@it-jay.be"</span><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"web"</span><span class="jp">:</span>
+                                    <span class="jk">"website"</span><span class="jp">:</span>
                                     <span class="js">"https://www.it-jay.be"</span>
                                 </p>
                             </div>
@@ -190,7 +206,7 @@
                     </div>
                 </section>
 
-                <!-- CZĘŚĆ 1 / ARTYKUŁ 1 -->
+                <!-- PART 1: GENERAL PROVISIONS (ART. 1 - 3) -->
                 <section class="terminal-window mb-3 mb-md-4">
                     <div class="terminal-header d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -199,7 +215,7 @@
                                 <span class="traffic-dot dot-min"></span>
                                 <span class="traffic-dot dot-max"></span>
                             </div>
-                            <span class="prompt-sign">$</span> cat art_01_scope_definitions.json
+                            <span class="prompt-sign">$</span> cat part_01_general_provisions.json
                         </div>
                         <div class="d-none d-sm-block text-secondary" style="font-size: 0.72rem">
                             part 1: general provisions
@@ -209,100 +225,43 @@
                         <div class="d-flex align-items-center gap-2 mb-2">
                             <i class="fa-solid fa-book-bookmark text-success"></i>
                             <span class="code-font small text-uppercase fw-semibold">
-                                <span class="text-warning">"Article 1":</span>
-                                <span class="text-white"> Scope &amp; Definitions</span>
+                                <span class="text-warning">"Part 01":</span>
+                                <span class="text-white"> Scope, Quotes &amp; Best-Effort Obligation</span>
                             </span>
                         </div>
                         <p class="text-secondary small mb-3">
-                            These general terms and conditions apply to all quotations, agreements, deliveries, and
-                            services provided by IT-JAY, unless explicitly agreed otherwise in writing.
+                            Foundational principles governing agreements, quote validity, and the technical nature of
+                            obligations.
                         </p>
                         <div class="json-block">
                             <span class="jp">{</span><br />
                             <div class="json-row">
                                 <p>
-                                    <span class="jk">"customer"</span><span class="jp">:</span>
+                                    <span class="jk">"art_1_scope"</span><span class="jp">:</span>
                                     <span class="js"
-                                        >"Any natural or legal person entering into an agreement with IT-JAY"</span
+                                        >"Applies to all offers, deliveries, and services. Client purchasing terms are
+                                        explicitly and fully rejected."</span
                                     ><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"consumer_b2c"</span><span class="jp">:</span>
+                                    <span class="jk">"art_2_quotes_formation"</span><span class="jp">:</span>
                                     <span class="js"
-                                        >"A natural person acting exclusively for non-professional or non-commercial
-                                        purposes"</span
+                                        >"Quotes valid for 30 calendar days. Agreement formed upon written acceptance or
+                                        actual commencement of work."</span
                                     ><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"enterprise_b2b"</span><span class="jp">:</span>
-                                    <span class="js">"Any entity pursuing an economic objective"</span
+                                    <span class="jk">"art_3_best_efforts"</span><span class="jp">:</span>
+                                    <span class="js"
+                                        >"All obligations are best-effort (obligation de moyens). 100% cyber protection
+                                        or uptime is never guaranteed without explicit SLA."</span
                                     ><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"customer_own_terms"</span><span class="jp">:</span>
-                                    <span class="js">"Expressly and entirely rejected"</span>
-                                </p>
-                            </div>
-                            <span class="jp">}</span>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- CZĘŚĆ 1 / ARTYKUŁ 2 & 3 -->
-                <section class="terminal-window mb-3 mb-md-4">
-                    <div class="terminal-header d-flex align-items-center justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <div class="traffic-dots">
-                                <span class="traffic-dot dot-close"></span>
-                                <span class="traffic-dot dot-min"></span>
-                                <span class="traffic-dot dot-max"></span>
-                            </div>
-                            <span class="prompt-sign">$</span> cat art_02_03_quotations_performance.json
-                        </div>
-                        <div class="d-none d-sm-block text-secondary" style="font-size: 0.72rem">
-                            offers and obligations
-                        </div>
-                    </div>
-                    <div class="p-4">
-                        <div class="d-flex align-items-center gap-2 mb-2">
-                            <i class="fa-solid fa-file-signature text-success"></i>
-                            <span class="code-font small text-uppercase fw-semibold">
-                                <span class="text-warning">"Articles 2 &amp; 3":</span>
-                                <span class="text-white">
-                                    Quotations, Conclusion of Agreement &amp; Obligation of Means</span
-                                >
-                            </span>
-                        </div>
-                        <div class="json-block mt-3">
-                            <span class="jp">{</span><br />
-                            <div class="json-row">
-                                <p>
-                                    <span class="jk">"art_2_quotations"</span><span class="jp">:</span>
+                                    <span class="jk">"art_3_delivery_dates"</span><span class="jp">:</span>
                                     <span class="js"
-                                        >"Valid for 30 calendar days, non-binding; agreement is concluded upon written
-                                        confirmation or actual start of execution. Manifest errors do not bind
-                                        IT-JAY."</span
-                                    ><span class="jp">,</span>
-                                </p>
-                                <p>
-                                    <span class="jk">"art_3_nature_of_obligations"</span><span class="jp">:</span>
-                                    <span class="js"
-                                        >"Obligations of means (inspanningsverbintenissen). IT-JAY does not guarantee
-                                        100% security against cyberattacks or 100% uptime without a signed SLA."</span
-                                    ><span class="jp">,</span>
-                                </p>
-                                <p>
-                                    <span class="jk">"art_3_deadlines"</span><span class="jp">:</span>
-                                    <span class="js"
-                                        >"Deadlines are indicative; delays without intentional fault do not give right
-                                        to compensation or agreement termination."</span
-                                    ><span class="jp">,</span>
-                                </p>
-                                <p>
-                                    <span class="jk">"art_3_subcontractors"</span><span class="jp">:</span>
-                                    <span class="js"
-                                        >"IT-JAY reserves the right to engage third parties, experts, and
-                                        freelancers."</span
+                                        >"Project timelines are strictly indicative; delays do not give rise to
+                                        penalties or rescission."</span
                                     >
                                 </p>
                             </div>
@@ -311,7 +270,7 @@
                     </div>
                 </section>
 
-                <!-- CZĘŚĆ 2: MODUŁY SPECJALNE -->
+                <!-- PART 2: SPECIFIC MODULES (A - F) -->
                 <section class="terminal-window mb-3 mb-md-4">
                     <div class="terminal-header d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -320,10 +279,10 @@
                                 <span class="traffic-dot dot-min"></span>
                                 <span class="traffic-dot dot-max"></span>
                             </div>
-                            <span class="prompt-sign">$</span> cat part_02_activity_modules.json
+                            <span class="prompt-sign">$</span> cat part_02_specific_modules.json
                         </div>
                         <div class="d-none d-sm-block text-secondary" style="font-size: 0.72rem">
-                            part 2: modules per activity
+                            part 2: business activity modules
                         </div>
                     </div>
                     <div class="p-4">
@@ -331,140 +290,145 @@
                             <i class="fa-solid fa-cubes text-success"></i>
                             <span class="code-font small text-uppercase fw-semibold">
                                 <span class="text-warning">"Part 02":</span>
-                                <span class="text-white"> Modular Terms for Specific Services</span>
+                                <span class="text-white"> Activity-Specific Modules (NACE-BEL)</span>
                             </span>
                         </div>
                         <p class="text-secondary small mb-3">
-                            Detailed clauses governing specific areas of IT-JAY professional activities.
+                            Tailored contractual rules applied per commercial and technical activity.
                         </p>
                         <div class="json-block">
                             <span class="jp">{</span><br />
                             <div class="json-row">
                                 <p>
-                                    <span class="jk">"module_A_consulting_software"</span><span class="jp">:</span>
+                                    <span class="jk">"module_A_web_software"</span><span class="jp">:</span>
                                     <span class="jp">{</span><br />
                                     <span class="ps-3"
                                         ><span class="jk">"nace"</span><span class="jp">:</span>
                                         <span class="js">"62.010, 62.020, 62.030"</span><span class="jp">,</span></span
                                     ><br />
                                     <span class="ps-3"
-                                        ><span class="jk">"cooperation"</span><span class="jp">:</span>
-                                        <span class="js"
-                                            >"Customer timely provides data and administrative access rights"</span
-                                        ><span class="jp">,</span></span
-                                    ><br />
-                                    <span class="ps-3"
                                         ><span class="jk">"acceptance"</span><span class="jp">:</span>
                                         <span class="js"
-                                            >"14 calendar days for testing and reporting defects; production deployment
-                                            constitutes unconditional acceptance"</span
+                                            >"14-day testing period on staging; public go-live constitutes unconditional
+                                            acceptance"</span
                                         ><span class="jp">,</span></span
                                     ><br />
                                     <span class="ps-3"
-                                        ><span class="jk">"open_source"</span><span class="jp">:</span>
+                                        ><span class="jk">"scope_changes"</span><span class="jp">:</span>
                                         <span class="js"
-                                            >"Permitted; customer complies with third-party software licenses"</span
+                                            >"Any scope expansion or post-approval alteration strictly requires a new
+                                            formal quote"</span
                                         ></span
                                     ><br />
                                     <span class="jp">}</span><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"module_B_cloud_hosting_domains"</span><span class="jp">:</span>
+                                    <span class="jk">"module_B_legal_compliance_cookies"</span
+                                    ><span class="jp">:</span> <span class="jp">{</span><br />
+                                    <span class="ps-3"
+                                        ><span class="jk">"responsibility"</span><span class="jp">:</span>
+                                        <span class="js"
+                                            >"Client is 100% solely responsible for legal compliance, Privacy Policy
+                                            &amp; Cookie Banner decisions"</span
+                                        ><span class="jp">,</span></span
+                                    ><br />
+                                    <span class="ps-3"
+                                        ><span class="jk">"legal_advice"</span><span class="jp">:</span>
+                                        <span class="js"
+                                            >"IT-JAY does not provide legal advice; suggestions are technical-only;
+                                            Client indemnifies IT-JAY against all fines/claims"</span
+                                        ></span
+                                    ><br />
+                                    <span class="jp">}</span><span class="jp">,</span>
+                                </p>
+                                <p>
+                                    <span class="jk">"module_C_hosting_cloud_domains"</span><span class="jp">:</span>
                                     <span class="jp">{</span><br />
                                     <span class="ps-3"
                                         ><span class="jk">"nace"</span><span class="jp">:</span>
                                         <span class="js">"63.110, 63.120"</span><span class="jp">,</span></span
                                     ><br />
                                     <span class="ps-3"
+                                        ><span class="jk">"domain_ownership"</span><span class="jp">:</span>
+                                        <span class="js"
+                                            >"Registered in Client's name (registrant); IT-JAY acts solely as technical
+                                            DNS administrator"</span
+                                        ><span class="jp">,</span></span
+                                    ><br />
+                                    <span class="ps-3"
                                         ><span class="jk">"notice_takedown"</span><span class="jp">:</span>
                                         <span class="js"
-                                            >"Customer is fully responsible for content; illegal materials result in
-                                            immediate service suspension"</span
+                                            >"Illegal content or malicious abuse results in immediate service suspension
+                                            without compensation"</span
                                         ><span class="jp">,</span></span
                                     ><br />
                                     <span class="ps-3"
-                                        ><span class="jk">"fup"</span><span class="jp">:</span>
+                                        ><span class="jk">"renewal_termination"</span><span class="jp">:</span>
                                         <span class="js"
-                                            >"Fair Use Policy (FUP) to safeguard infrastructure stability"</span
-                                        ><span class="jp">,</span></span
-                                    ><br />
-                                    <span class="ps-3"
-                                        ><span class="jk">"third_party_providers"</span><span class="jp">:</span>
-                                        <span class="js"
-                                            >"Provider SLAs apply (Microsoft, AWS, Google); no chain liability"</span
+                                            >"1-year recurring term; tacit renewal unless cancelled in writing at least
+                                            1 month prior to expiry"</span
                                         ></span
                                     ><br />
                                     <span class="jp">}</span><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"module_C_photography_media"</span><span class="jp">:</span>
+                                    <span class="jk">"module_D_photography_media"</span><span class="jp">:</span>
                                     <span class="jp">{</span><br />
                                     <span class="ps-3"
                                         ><span class="jk">"nace"</span><span class="jp">:</span>
-                                        <span class="js">"74.201, 74.209"</span><span class="jp">,</span></span
+                                        <span class="js">"74.201, 74.209, 73.110"</span><span class="jp">,</span></span
                                     ><br />
                                     <span class="ps-3"
                                         ><span class="jk">"copyright"</span><span class="jp">:</span>
                                         <span class="js"
-                                            >"Retained by IT-JAY; customer receives a license; commercial resale
-                                            prohibited"</span
-                                        ><span class="jp">,</span></span
-                                    ><br />
-                                    <span class="ps-3"
-                                        ><span class="jk">"raw_files"</span><span class="jp">:</span>
-                                        <span class="js">"Not delivered unless purchased separately"</span
+                                            >"Retained by IT-JAY; Client receives usage license; raw files (RAW) are
+                                            never delivered unless bought out"</span
                                         ><span class="jp">,</span></span
                                     ><br />
                                     <span class="ps-3"
                                         ><span class="jk">"portfolio"</span><span class="jp">:</span>
                                         <span class="js"
-                                            >"Consent to publication for promotional purposes unless objected to in
-                                            advance"</span
+                                            >"Permission granted for promotional portfolio use unless prior written
+                                            objection is submitted"</span
                                         ></span
                                     ><br />
                                     <span class="jp">}</span><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"module_D_hardware_sales"</span><span class="jp">:</span>
+                                    <span class="jk">"module_E_hardware_sales"</span><span class="jp">:</span>
                                     <span class="jp">{</span><br />
                                     <span class="ps-3"
                                         ><span class="jk">"nace"</span><span class="jp">:</span>
                                         <span class="js">"46.500, 47.400, 47.910"</span><span class="jp">,</span></span
                                     ><br />
                                     <span class="ps-3"
-                                        ><span class="jk">"ownership"</span><span class="jp">:</span>
-                                        <span class="js">"Retention of title until full payment is received"</span
-                                        ><span class="jp">,</span></span
-                                    ><br />
-                                    <span class="ps-3"
-                                        ><span class="jk">"risk"</span><span class="jp">:</span>
-                                        <span class="js">"Transfers upon delivery or handover to the carrier"</span
+                                        ><span class="jk">"retention_of_title"</span><span class="jp">:</span>
+                                        <span class="js"
+                                            >"Goods remain exclusive property of IT-JAY until full payment of principal
+                                            and charges"</span
                                         ><span class="jp">,</span></span
                                     ><br />
                                     <span class="ps-3"
                                         ><span class="jk">"warranty"</span><span class="jp">:</span>
                                         <span class="js"
-                                            >"B2C: 2-year statutory warranty; B2B: manufacturer warranty only"</span
+                                            >"B2C: statutory 2-year warranty; B2B: strictly limited to manufacturer
+                                            warranty (no commercial warranty)"</span
                                         ></span
                                     ><br />
                                     <span class="jp">}</span><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"module_E_training"</span><span class="jp">:</span>
+                                    <span class="jk">"module_F_training"</span><span class="jp">:</span>
                                     <span class="jp">{</span><br />
                                     <span class="ps-3"
                                         ><span class="jk">"nace"</span><span class="jp">:</span>
                                         <span class="js">"85.592, 85.599"</span><span class="jp">,</span></span
                                     ><br />
                                     <span class="ps-3"
-                                        ><span class="jk">"materials"</span><span class="jp">:</span>
-                                        <span class="js">"Copying and distributing without consent is prohibited"</span
-                                        ><span class="jp">,</span></span
-                                    ><br />
-                                    <span class="ps-3"
                                         ><span class="jk">"cancellation"</span><span class="jp">:</span>
                                         <span class="js"
-                                            >"Cancellation &lt; 7 days before the date requires 100% payment"</span
+                                            >"Training materials copyrighted. Cancellation &lt; 7 calendar days before
+                                            session requires 100% payment"</span
                                         ></span
                                     ><br />
                                     <span class="jp">}</span>
@@ -475,7 +439,7 @@
                     </div>
                 </section>
 
-                <!-- CZĘŚĆ 3 / ARTYKUŁ 4 & 5 -->
+                <!-- PART 3: FINANCIAL, BACKUP & LIABILITY (ART. 4 - 8) -->
                 <section class="terminal-window mb-3 mb-md-4">
                     <div class="terminal-header d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -484,18 +448,18 @@
                                 <span class="traffic-dot dot-min"></span>
                                 <span class="traffic-dot dot-max"></span>
                             </div>
-                            <span class="prompt-sign">$</span> cat art_04_05_backup_payments.json
+                            <span class="prompt-sign">$</span> cat part_03_financial_liability.json
                         </div>
                         <div class="d-none d-sm-block text-secondary" style="font-size: 0.72rem">
-                            backup and finances
+                            part 3: financial &amp; legal
                         </div>
                     </div>
                     <div class="p-4">
                         <div class="d-flex align-items-center gap-2 mb-2">
                             <i class="fa-solid fa-shield-halved text-success"></i>
                             <span class="code-font small text-uppercase fw-semibold">
-                                <span class="text-warning">"Articles 4 &amp; 5":</span>
-                                <span class="text-white"> Backups, Pricing &amp; Late Payment Fees</span>
+                                <span class="text-warning">"Part 03":</span>
+                                <span class="text-white"> Backups, Payment Terms, Debt Recovery &amp; Liability</span>
                             </span>
                         </div>
                         <div class="json-block mt-3">
@@ -504,34 +468,51 @@
                                 <p>
                                     <span class="jk">"art_4_backup_duty"</span><span class="jp">:</span>
                                     <span class="js"
-                                        >"Customer is solely responsible for backups prior to IT-JAY starting work.
-                                        IT-JAY is not liable for data loss."</span
+                                        >"Client is exclusively responsible for full external backups prior to any work.
+                                        Zero liability for data loss."</span
                                     ><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"art_5_invoice_terms"</span><span class="jp">:</span>
-                                    <span class="js">"30 calendar days from invoice date"</span
-                                    ><span class="jp">,</span>
-                                </p>
-                                <p>
-                                    <span class="jk">"art_5_b2b_late_payment"</span><span class="jp">:</span>
+                                    <span class="jk">"art_5_payment_terms"</span><span class="jp">:</span>
                                     <span class="js"
-                                        >"Statutory interest (Act 02/08/2002) + 10% lump sum (min. €100)"</span
+                                        >"Payable within 30 calendar days. Services (hosting/access) suspended
+                                        immediately upon default."</span
                                     ><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"art_5_b2c_late_payment"</span><span class="jp">:</span>
+                                    <span class="jk">"art_5_late_payment_b2b"</span><span class="jp">:</span>
                                     <span class="js"
-                                        >"Free reminder (14 days grace period); then interest and fees under Book XIX of
-                                        the Code of Economic Law (€20 up to €150; €30+10% up to €500; €65+5% above
-                                        €500)"</span
+                                        >"Statutory interest under Belgian Act of 02/08/2002 + 10% lump-sum indemnity
+                                        (min. €100.00)."</span
                                     ><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"art_5_service_suspension"</span><span class="jp">:</span>
+                                    <span class="jk">"art_5_late_payment_b2c"</span><span class="jp">:</span>
                                     <span class="js"
-                                        >"Right to suspend services (hosting, support) in case of overdue
-                                        payments"</span
+                                        >"Free reminder with 14-day grace period; thereafter statutory interest + capped
+                                        fee under Book XIX WER."</span
+                                    ><span class="jp">,</span>
+                                </p>
+                                <p>
+                                    <span class="jk">"art_6_right_of_withdrawal"</span><span class="jp">:</span>
+                                    <span class="js"
+                                        >"14 days for B2C distance sales. Excluded for customized software, bespoke
+                                        websites, or immediate digital delivery."</span
+                                    ><span class="jp">,</span>
+                                </p>
+                                <p>
+                                    <span class="jk">"art_7_liability_cap"</span><span class="jp">:</span>
+                                    <span class="js"
+                                        >"Limited to direct damages from willful misconduct or gross negligence.
+                                        Strictly capped at project invoice value / insurance payout. Indirect damages
+                                        excluded."</span
+                                    ><span class="jp">,</span>
+                                </p>
+                                <p>
+                                    <span class="jk">"art_8_force_majeure_hardship"</span><span class="jp">:</span>
+                                    <span class="js"
+                                        >"Includes upstream cloud outages, DDoS, power loss. Hardship renegotiation
+                                        governed by Art. 5.74 of the Belgian Civil Code."</span
                                     >
                                 </p>
                             </div>
@@ -540,62 +521,7 @@
                     </div>
                 </section>
 
-                <!-- CZĘŚĆ 3 / ARTYKUŁ 6, 7 & 8 -->
-                <section class="terminal-window mb-3 mb-md-4">
-                    <div class="terminal-header d-flex align-items-center justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <div class="traffic-dots">
-                                <span class="traffic-dot dot-close"></span>
-                                <span class="traffic-dot dot-min"></span>
-                                <span class="traffic-dot dot-max"></span>
-                            </div>
-                            <span class="prompt-sign">$</span> cat art_06_08_withdrawal_liability.json
-                        </div>
-                        <div class="d-none d-sm-block text-secondary" style="font-size: 0.72rem">
-                            rights and liability
-                        </div>
-                    </div>
-                    <div class="p-4">
-                        <div class="d-flex align-items-center gap-2 mb-2">
-                            <i class="fa-solid fa-triangle-exclamation text-success"></i>
-                            <span class="code-font small text-uppercase fw-semibold">
-                                <span class="text-warning">"Articles 6, 7 &amp; 8":</span>
-                                <span class="text-white"> Right of Withdrawal, Liability &amp; Force Majeure</span>
-                            </span>
-                        </div>
-                        <div class="json-block mt-3">
-                            <span class="jp">{</span><br />
-                            <div class="json-row">
-                                <p>
-                                    <span class="jk">"art_6_b2c_withdrawal"</span><span class="jp">:</span>
-                                    <span class="js"
-                                        >"14 days to withdraw from distance contracts. Exceptions: fully performed
-                                        services with prior consent, digital content, and customized products made to
-                                        order."</span
-                                    ><span class="jp">,</span>
-                                </p>
-                                <p>
-                                    <span class="jk">"art_7_liability"</span><span class="jp">:</span>
-                                    <span class="js"
-                                        >"Intentional fault and gross negligence only. No liability for indirect damages
-                                        (lost profits, ransomware, cyberattacks). Total sum capped at invoiced amount or
-                                        professional liability insurance payout."</span
-                                    ><span class="jp">,</span>
-                                </p>
-                                <p>
-                                    <span class="jk">"art_8_force_majeure"</span><span class="jp">:</span>
-                                    <span class="js"
-                                        >"DDoS attacks, power outages, cloud provider failures, etc. Hardship doctrine
-                                        applies (Art. 5.74 of the New Civil Code)."</span
-                                    >
-                                </p>
-                            </div>
-                            <span class="jp">}</span>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- CZĘŚĆ 3 / ARTYKUŁ 9, 10, 11 & 12 -->
+                <!-- PART 4: CLOSING PROVISIONS (ART. 9 - 13) -->
                 <section class="terminal-window mb-4">
                     <div class="terminal-header d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -604,18 +530,18 @@
                                 <span class="traffic-dot dot-min"></span>
                                 <span class="traffic-dot dot-max"></span>
                             </div>
-                            <span class="prompt-sign">$</span> cat art_09_12_final_clauses.json
+                            <span class="prompt-sign">$</span> cat part_04_closing_clauses.json
                         </div>
                         <div class="d-none d-sm-block text-secondary" style="font-size: 0.72rem">
-                            confidentiality, gdpr and jurisdiction
+                            part 4: governance &amp; jurisdiction
                         </div>
                     </div>
                     <div class="p-4">
                         <div class="d-flex align-items-center gap-2 mb-2">
                             <i class="fa-solid fa-gavel text-success"></i>
                             <span class="code-font small text-uppercase fw-semibold">
-                                <span class="text-warning">"Articles 9 - 12":</span>
-                                <span class="text-white"> Confidentiality, GDPR, Termination &amp; Applicable Law</span>
+                                <span class="text-warning">"Part 04":</span>
+                                <span class="text-white"> Confidentiality, GDPR, Termination &amp; Jurisdiction</span>
                             </span>
                         </div>
                         <div class="json-block mt-3">
@@ -625,29 +551,35 @@
                                     <span class="jk">"art_9_confidentiality_non_solicitation"</span
                                     ><span class="jp">:</span>
                                     <span class="js"
-                                        >"Obligation of confidentiality (NDA). Non-solicitation of employees and
-                                        contractors for 12 months under penalty equal to 12 months' gross
-                                        remuneration."</span
+                                        >"Strict NDA. Non-solicitation of IT-JAY staff/freelancers for 12 months
+                                        (penalty: 12 months gross remuneration)."</span
                                     ><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"art_10_gdpr"</span><span class="jp">:</span>
+                                    <span class="jk">"art_10_gdpr_data_processing"</span><span class="jp">:</span>
                                     <span class="js"
-                                        >"IT-JAY acts as Controller for direct data. A separate Data Processing
-                                        Agreement (DPA) applies when handling customer databases."</span
+                                        >"IT-JAY is Controller for client accounts. Separate DPA executed when IT-JAY
+                                        processes third-party data as Processor."</span
                                     ><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"art_11_termination"</span><span class="jp">:</span>
+                                    <span class="jk">"art_11_immediate_termination"</span><span class="jp">:</span>
                                     <span class="js"
-                                        >"Immediate termination in case of bankruptcy, material breach of contract, or
-                                        suspicion of criminal activity."</span
+                                        >"Immediate termination of right upon bankruptcy, uncured breach (14 days), or
+                                        infrastructure abuse/hacking."</span
                                     ><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"art_12_court_and_law"</span><span class="jp">:</span>
+                                    <span class="jk">"art_12_severability"</span><span class="jp">:</span>
                                     <span class="js"
-                                        >"Belgian law exclusively (CISG excluded). Courts of the Judicial District of
+                                        >"Invalidity of any clause does not affect remaining provisions; replaced by
+                                        legally valid term of equivalent effect."</span
+                                    ><span class="jp">,</span>
+                                </p>
+                                <p>
+                                    <span class="jk">"art_13_applicable_law_courts"</span><span class="jp">:</span>
+                                    <span class="js"
+                                        >"Exclusively Belgian law (CISG excluded). Exclusive jurisdiction: Courts of
                                         East Flanders, Dendermonde division."</span
                                     >
                                 </p>
@@ -658,9 +590,9 @@
                 </section>
 
                 <!-- Przyciski akcji (ułożone obok siebie) -->
-                <div class="d-flex flex-wrap justify-content-center align-items-center gap-3 my-4">
+                <div id="downloads" class="d-flex flex-wrap justify-content-center align-items-center gap-3 my-4">
                     <!-- Przycisk pobierania dokumentu -->
-                    <a href="downloads/Alegemene-voorwaarden.pdf" class="btn btn-cli px-4 py-2" download>
+                    <a href="downloads/Algemene-voorwaarden.pdf" class="btn btn-cli px-4 py-2" download>
                         <i class="fa-solid fa-file-pdf text-warning me-2"></i> Download PDF (Dutch)
                     </a>
 

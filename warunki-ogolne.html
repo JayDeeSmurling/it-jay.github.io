@@ -130,7 +130,7 @@
 
         <main class="py-4 py-md-5">
             <div class="container-xl" style="max-width: 980px">
-                <!-- HERO DOKUMENTU -->
+                <!-- SEKCJA HERO -->
                 <section class="terminal-window mb-4">
                     <div class="terminal-header d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -142,7 +142,7 @@
                             <span class="text-secondary">legal@it-jay:~ (zsh)</span>
                         </div>
                         <div class="d-none d-sm-block text-secondary" style="font-size: 0.72rem">
-                            status: 200 OK [Terms &amp; Conditions] // rev: 2026.1
+                            status: 200 OK [Warunki Ogólne] // rev: 2026.1
                         </div>
                     </div>
 
@@ -151,14 +151,29 @@
                             <span class="prompt-sign">$</span> <span class="cmd-text">cat warunki_ogolne.md</span>
                         </div>
                         <h1 class="display-6 fw-bold text-white mb-2">Ogólne Warunki Handlowe</h1>
-                        <p class="text-secondary small mb-4">
-                            Zasady świadczenia usług, prawa i obowiązki stron, procedury rozliczeniowe oraz ograniczenia
-                            odpowiedzialności w relacjach B2B i B2C.
+                        <p class="text-secondary small mb-3">
+                            Podsumowanie zasad współpracy, praw i obowiązków stron w relacjach B2B i B2C, gwarancji oraz ograniczeń odpowiedzialności zgodnie z prawem belgijskim.
                         </p>
 
-                        <!-- Blok danych podmiotu -->
+                        <!-- Banner podsumowania -->
+                        <div class="p-3 mb-4 rounded border border-warning bg-dark d-flex align-items-start gap-3">
+                            <i class="fa-solid fa-circle-info text-warning fs-5 mt-1"></i>
+                            <div class="small">
+                                <span class="text-warning fw-semibold font-monospace">[UWAGA // PODSUMOWANIE]</span><br />
+                                <span class="text-light">
+                                    Poniższy tekst stanowi <strong>tematyczne podsumoiwanie</strong> naszych Warunków Ogólnych. Pełna i wiążąca wersja (w języku niderlandzkim) jest do pobrania jako PDF na dole strony.
+                                </span>
+                                <div class="mt-2">
+                                    <a href="#downloads" class="text-warning text-decoration-none fw-medium hover-underline font-monospace">
+                                        <i class="fa-solid fa-file-pdf me-1"></i>&gt; Przejdź do pobierania wersji PDF (język niderlandzki)
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Blok danych podmiotu JSON -->
                         <div class="json-block mb-3">
-                            <span class="jc">// Dane przedsiębiorstwa wykonawcy</span><br />
+                            <span class="jc">// Dane rejestrowe usługodawcy</span><br />
                             <span class="jp">{</span><br />
                             <div class="json-row">
                                 <p>
@@ -167,8 +182,7 @@
                                 </p>
                                 <p>
                                     <span class="jk">"adres"</span><span class="jp">:</span>
-                                    <span class="js">"Hofkensweg 42, 9420 Erpe-Mere, Belgia"</span
-                                    ><span class="jp">,</span>
+                                    <span class="js">"Hofkensweg 42, 9420 Erpe-Mere, Belgia"</span><span class="jp">,</span>
                                 </p>
                                 <p>
                                     <span class="jk">"kbo_btw"</span><span class="jp">:</span>
@@ -179,7 +193,7 @@
                                     <span class="js">"info@it-jay.be"</span><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"web"</span><span class="jp">:</span>
+                                    <span class="jk">"strona_www"</span><span class="jp">:</span>
                                     <span class="js">"https://www.it-jay.be"</span>
                                 </p>
                             </div>
@@ -188,7 +202,7 @@
                     </div>
                 </section>
 
-                <!-- CZĘŚĆ 1 / ARTYKUŁ 1 -->
+                <!-- CZĘŚĆ 1: POSTANOWIENIA OGÓLNE (ART. 1 - 3) -->
                 <section class="terminal-window mb-3 mb-md-4">
                     <div class="terminal-header d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -197,7 +211,7 @@
                                 <span class="traffic-dot dot-min"></span>
                                 <span class="traffic-dot dot-max"></span>
                             </div>
-                            <span class="prompt-sign">$</span> cat art_01_zakres_definicje.json
+                            <span class="prompt-sign">$</span> cat czesc_01_postanowienia_ogolne.json
                         </div>
                         <div class="d-none d-sm-block text-secondary" style="font-size: 0.72rem">
                             część 1: postanowienia ogólne
@@ -207,37 +221,31 @@
                         <div class="d-flex align-items-center gap-2 mb-2">
                             <i class="fa-solid fa-book-bookmark text-success"></i>
                             <span class="code-font small text-uppercase fw-semibold">
-                                <span class="text-warning">"Artykuł 1":</span>
-                                <span class="text-white"> Zakres stosowania i definicje</span>
+                                <span class="text-warning">"Część 01":</span>
+                                <span class="text-white"> Zakres, Oferty &amp; Zobowiązanie Starannego Działania</span>
                             </span>
                         </div>
                         <p class="text-secondary small mb-3">
-                            Niniejsze ogólne warunki handlowe mają zastosowanie do wszystkich ofert, umów, dostaw i
-                            usług świadczonych przez IT-JAY, chyba że wyraźnie i pisemnie uzgodniono inaczej[cite: 13].
+                            Podstawowe zasady zawierania umów, ważność wycen oraz inżynieryjny charakter zobowiązań.
                         </p>
                         <div class="json-block">
                             <span class="jp">{</span><br />
                             <div class="json-row">
                                 <p>
-                                    <span class="jk">"klient"</span><span class="jp">:</span>
-                                    <span class="js">"Każda osoba fizyczna lub prawna zawierająca umowę z IT-JAY"</span
-                                    ><span class="jp">,</span>
+                                    <span class="jk">"art_1_zakres_stosowania"</span><span class="jp">:</span>
+                                    <span class="js">"Dotyczy wszystkich ofert, dostaw i usług IT-JAY. Warunki zakupu Klienta zostają w całości odrzucone."</span><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"konsument_b2c"</span><span class="jp">:</span>
-                                    <span class="js"
-                                        >"Osoba fizyczna działająca wyłącznie w celach niezwiązanych z działalnością
-                                        zawodową lub gospodarczą"</span
-                                    ><span class="jp">,</span>
+                                    <span class="jk">"art_2_oferty_zawarcie_umowy"</span><span class="jp">:</span>
+                                    <span class="js">"Oferty ważne 30 dni kalendarzowych. Zawarcie umowy następuje po pisemnej akceptacji lub faktycznym rozpoczęciu prac."</span><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"przedsiebiorstwo_b2b"</span><span class="jp">:</span>
-                                    <span class="js">"Każda jednostka dążąca do osiągnięcia celu gospodarczego"</span
-                                    ><span class="jp">,</span>
+                                    <span class="jk">"art_3_staranne_dzialanie"</span><span class="jp">:</span>
+                                    <span class="js">"Wszystkie usługi to zobowiązania starannego działania (middelenverbintenis). Brak gwarancji 100% ochrony przed cyberatakami lub bezawaryjności bez odrębnego SLA."</span><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"warunki_wlasne_klienta"</span><span class="jp">:</span>
-                                    <span class="js">"Wyraźnie i w całości odrzucone"</span>
+                                    <span class="jk">"art_3_terminy_realizacji"</span><span class="jp">:</span>
+                                    <span class="js">"Terminy mają charakter wyłącznie orientacyjny; opóźnienie nie rodzi prawa do odszkodowania ani zerwania umowy."</span>
                                 </p>
                             </div>
                             <span class="jp">}</span>
@@ -245,7 +253,7 @@
                     </div>
                 </section>
 
-                <!-- CZĘŚĆ 1 / ARTYKUŁ 2 & 3 -->
+                <!-- CZĘŚĆ 2: MODUŁY SPECJALNE (A - F) -->
                 <section class="terminal-window mb-3 mb-md-4">
                     <div class="terminal-header d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -254,73 +262,10 @@
                                 <span class="traffic-dot dot-min"></span>
                                 <span class="traffic-dot dot-max"></span>
                             </div>
-                            <span class="prompt-sign">$</span> cat art_02_03_oferty_realizacja.json
+                            <span class="prompt-sign">$</span> cat czesc_02_moduly_specjalne.json
                         </div>
                         <div class="d-none d-sm-block text-secondary" style="font-size: 0.72rem">
-                            oferty i zobowiązania
-                        </div>
-                    </div>
-                    <div class="p-4">
-                        <div class="d-flex align-items-center gap-2 mb-2">
-                            <i class="fa-solid fa-file-signature text-success"></i>
-                            <span class="code-font small text-uppercase fw-semibold">
-                                <span class="text-warning">"Artykuły 2 &amp; 3":</span>
-                                <span class="text-white">
-                                    Oferty, zawarcie umowy i zobowiązanie starannego działania</span
-                                >
-                            </span>
-                        </div>
-                        <div class="json-block mt-3">
-                            <span class="jp">{</span><br />
-                            <div class="json-row">
-                                <p>
-                                    <span class="jk">"art_2_oferty"</span><span class="jp">:</span>
-                                    <span class="js"
-                                        >"Ważne przez 30 dni kalendarzowych, niewiążące; umowa dochodzi do skutku po
-                                        pisemnym potwierdzeniu lub faktycznym rozpoczęciu realizacji. Oczywiste pomyłki
-                                        nie wiążą IT-JAY."</span
-                                    ><span class="jp">,</span>
-                                </p>
-                                <p>
-                                    <span class="jk">"art_3_charakter_zobowiazan"</span><span class="jp">:</span>
-                                    <span class="js"
-                                        >"Zobowiązania starannego działania (inspanningsverbintenissen). IT-JAY nie
-                                        gwarantuje 100% ochrony przed cyberatakami ani 100% uptime bez podpisanej umowy
-                                        SLA."</span
-                                    ><span class="jp">,</span>
-                                </p>
-                                <p>
-                                    <span class="jk">"art_3_terminy"</span><span class="jp">:</span>
-                                    <span class="js"
-                                        >"Terminy są orientacyjne; opóźnienie bez winy umyślnej nie rodzi prawa do
-                                        odszkodowania ani rozwiązania umowy."</span
-                                    ><span class="jp">,</span>
-                                </p>
-                                <p>
-                                    <span class="jk">"art_3_podwykonawcy"</span><span class="jp">:</span>
-                                    <span class="js"
-                                        >"IT-JAY ma prawo angażować podwykonawców, ekspertów i freelancerów."</span
-                                    >
-                                </p>
-                            </div>
-                            <span class="jp">}</span>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- CZĘŚĆ 2: MODUŁY SPECJALNE -->
-                <section class="terminal-window mb-3 mb-md-4">
-                    <div class="terminal-header d-flex align-items-center justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <div class="traffic-dots">
-                                <span class="traffic-dot dot-close"></span>
-                                <span class="traffic-dot dot-min"></span>
-                                <span class="traffic-dot dot-max"></span>
-                            </div>
-                            <span class="prompt-sign">$</span> cat czesc_02_moduly_dzialalnosci.json
-                        </div>
-                        <div class="d-none d-sm-block text-secondary" style="font-size: 0.72rem">
-                            część 2: moduły per aktywność
+                            część 2: moduły per działalność
                         </div>
                     </div>
                     <div class="p-4">
@@ -328,148 +273,60 @@
                             <i class="fa-solid fa-cubes text-success"></i>
                             <span class="code-font small text-uppercase fw-semibold">
                                 <span class="text-warning">"Część 02":</span>
-                                <span class="text-white"> Warunki modułowe dla poszczególnych usług</span>
+                                <span class="text-white"> Moduły szczegółowe wg kodów NACE-BEL</span>
                             </span>
                         </div>
                         <p class="text-secondary small mb-3">
-                            Szczegółowe klauzule regulujące poszczególne rodzaje aktywności zawodowych IT-JAY[cite: 13].
+                            Szczegółowe regulacje dopasowane do poszczególnych rodzajów świadczonych usług.
                         </p>
                         <div class="json-block">
                             <span class="jp">{</span><br />
                             <div class="json-row">
                                 <p>
-                                    <span class="jk">"modul_A_consulting_software"</span><span class="jp">:</span>
+                                    <span class="jk">"modul_A_web_software"</span><span class="jp">:</span>
                                     <span class="jp">{</span><br />
-                                    <span class="ps-3"
-                                        ><span class="jk">"nace"</span><span class="jp">:</span>
-                                        <span class="js">"62.010, 62.020, 62.030"</span><span class="jp">,</span></span
-                                    ><br />
-                                    <span class="ps-3"
-                                        ><span class="jk">"wspolpraca"</span><span class="jp">:</span>
-                                        <span class="js"
-                                            >"Klient dostarcza terminowo dane i uprawnienia administratorskie"</span
-                                        ><span class="jp">,</span></span
-                                    ><br />
-                                    <span class="ps-3"
-                                        ><span class="jk">"odbior"</span><span class="jp">:</span>
-                                        <span class="js"
-                                            >"14 dni kalendarzowych na testy i zgłoszenie wad; wdrożenie produkcyjne
-                                            oznacza bezwarunkową akceptację"</span
-                                        ><span class="jp">,</span></span
-                                    ><br />
-                                    <span class="ps-3"
-                                        ><span class="jk">"open_source"</span><span class="jp">:</span>
-                                        <span class="js"
-                                            >"Dozwolone; klient przestrzega licencji zewnętrznych"</span
-                                        ></span
-                                    ><br />
+                                    <span class="ps-3"><span class="jk">"nace"</span><span class="jp">:</span> <span class="js">"62.010, 62.020, 62.030"</span><span class="jp">,</span></span><br />
+                                    <span class="ps-3"><span class="jk">"odbior"</span><span class="jp">:</span> <span class="js">"14 dni na testy środowiska staging; publiczne wdrożenie (go-live) oznacza bezwarunkową akceptację"</span><span class="jp">,</span></span><br />
+                                    <span class="ps-3"><span class="jk">"prace_dodatkowe"</span><span class="jp">:</span> <span class="js">"Wszelkie rozszerzenia lub zmiany po akceptacji specyfikacji wymagają nowej, odrębnej oferty"</span></span><br />
                                     <span class="jp">}</span><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"modul_B_cloud_hosting_domeny"</span><span class="jp">:</span>
+                                    <span class="jk">"modul_B_compliance_cookies_privacy"</span><span class="jp">:</span>
                                     <span class="jp">{</span><br />
-                                    <span class="ps-3"
-                                        ><span class="jk">"nace"</span><span class="jp">:</span>
-                                        <span class="js">"63.110, 63.120"</span><span class="jp">,</span></span
-                                    ><br />
-                                    <span class="ps-3"
-                                        ><span class="jk">"notice_takedown"</span><span class="jp">:</span>
-                                        <span class="js"
-                                            >"Klient w pełni odpowiada za treści; nielegalne materiały skutkują
-                                            natychmiastowym wyłączeniem usługi"</span
-                                        ><span class="jp">,</span></span
-                                    ><br />
-                                    <span class="ps-3"
-                                        ><span class="jk">"fup"</span><span class="jp">:</span>
-                                        <span class="js"
-                                            >"Zasada dozwolonego użytku (FUP) chroniąca stabilność infrastruktury"</span
-                                        ><span class="jp">,</span></span
-                                    ><br />
-                                    <span class="ps-3"
-                                        ><span class="jk">"dostawcy_trzeci"</span><span class="jp">:</span>
-                                        <span class="js"
-                                            >"Stosuje się SLA dostawców (Microsoft, AWS, Google); brak odpowiedzialności
-                                            łańcuchowej"</span
-                                        ></span
-                                    ><br />
+                                    <span class="ps-3"><span class="jk">"odpowiedzialnosc"</span><span class="jp">:</span> <span class="js">"Klient ponosi 100% wyłącznej odpowiedzialności za treść dokumentów prawnych oraz decyzję o banerze cookies"</span><span class="jp">,</span></span><br />
+                                    <span class="ps-3"><span class="jk">"doradztwo_prawne"</span><span class="jp">:</span> <span class="js">"IT-JAY nie świadczy pomocy prawnej; sugestie są wyłącznie techniczne; Klient zwalnia IT-JAY z roszczeń i kar"</span></span><br />
                                     <span class="jp">}</span><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"modul_C_fotografia_media"</span><span class="jp">:</span>
+                                    <span class="jk">"modul_C_hosting_chmura_domeny"</span><span class="jp">:</span>
                                     <span class="jp">{</span><br />
-                                    <span class="ps-3"
-                                        ><span class="jk">"nace"</span><span class="jp">:</span>
-                                        <span class="js">"74.201, 74.209"</span><span class="jp">,</span></span
-                                    ><br />
-                                    <span class="ps-3"
-                                        ><span class="jk">"prawa_autorskie"</span><span class="jp">:</span>
-                                        <span class="js"
-                                            >"Należą do IT-JAY; klient otrzymuje licencję; zakaz komercyjnej
-                                            odsprzedaży"</span
-                                        ><span class="jp">,</span></span
-                                    ><br />
-                                    <span class="ps-3"
-                                        ><span class="jk">"pliki_raw"</span><span class="jp">:</span>
-                                        <span class="js"
-                                            >"Nie podlegają wydaniu, chyba że zostały osobno wykupione"</span
-                                        ><span class="jp">,</span></span
-                                    ><br />
-                                    <span class="ps-3"
-                                        ><span class="jk">"portfolio"</span><span class="jp">:</span>
-                                        <span class="js"
-                                            >"Zgoda na publikację w celach promocyjnych przy braku uprzedniego
-                                            sprzeciwu"</span
-                                        ></span
-                                    ><br />
+                                    <span class="ps-3"><span class="jk">"nace"</span><span class="jp">:</span> <span class="js">"63.110, 63.120"</span><span class="jp">,</span></span><br />
+                                    <span class="ps-3"><span class="jk">"wlasnosc_domen"</span><span class="jp">:</span> <span class="js">"Rejestracja na rzecz Klienta (abonent); IT-JAY zarządza wyłącznie rekordami DNS"</span><span class="jp">,</span></span><br />
+                                    <span class="ps-3"><span class="jk">"notice_takedown"</span><span class="jp">:</span> <span class="js">"Nielegalne treści lub nadużycia skutkują natychmiastowym zablokowaniem usługi bez odszkodowania"</span><span class="jp">,</span></span><br />
+                                    <span class="ps-3"><span class="jk">"wypowiedzenie"</span><span class="jp">:</span> <span class="js">"Okres roczny z milczącym przedłużeniem; wypowiedzenie min. 1 miesiąc przed końcem cyklu"</span></span><br />
                                     <span class="jp">}</span><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"modul_D_sprzedaz_sprzetu"</span><span class="jp">:</span>
+                                    <span class="jk">"modul_D_fotografia_media"</span><span class="jp">:</span>
                                     <span class="jp">{</span><br />
-                                    <span class="ps-3"
-                                        ><span class="jk">"nace"</span><span class="jp">:</span>
-                                        <span class="js">"46.500, 47.400, 47.910"</span><span class="jp">,</span></span
-                                    ><br />
-                                    <span class="ps-3"
-                                        ><span class="jk">"wlasnosc"</span><span class="jp">:</span>
-                                        <span class="js"
-                                            >"Zastrzeżenie własności do momentu uiszczenia pełnej zapłaty"</span
-                                        ><span class="jp">,</span></span
-                                    ><br />
-                                    <span class="ps-3"
-                                        ><span class="jk">"ryzyko"</span><span class="jp">:</span>
-                                        <span class="js"
-                                            >"Przechodzi w momencie dostawy lub przekazania przewoźnikowi"</span
-                                        ><span class="jp">,</span></span
-                                    ><br />
-                                    <span class="ps-3"
-                                        ><span class="jk">"gwarancja"</span><span class="jp">:</span>
-                                        <span class="js"
-                                            >"B2C: 2 lata gwarancji ustawowej; B2B: wyłącznie gwarancja
-                                            producenta"</span
-                                        ></span
-                                    ><br />
+                                    <span class="ps-3"><span class="jk">"nace"</span><span class="jp">:</span> <span class="js">"74.201, 74.209, 73.110"</span><span class="jp">,</span></span><br />
+                                    <span class="ps-3"><span class="jk">"prawa_autorskie"</span><span class="jp">:</span> <span class="js">"Należą do IT-JAY; Klient otrzymuje licencję; pliki RAW nie są wydawane bez osobnego wykupienia"</span><span class="jp">,</span></span><br />
+                                    <span class="ps-3"><span class="jk">"portfolio"</span><span class="jp">:</span> <span class="js">"Zgoda na publikację w portfolio promocyjnym, o ile nie zgłoszono uprzedniego sprzeciwu"</span></span><br />
                                     <span class="jp">}</span><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"modul_E_szkolenia"</span><span class="jp">:</span>
+                                    <span class="jk">"modul_E_sprzedaz_sprzetu"</span><span class="jp">:</span>
                                     <span class="jp">{</span><br />
-                                    <span class="ps-3"
-                                        ><span class="jk">"nace"</span><span class="jp">:</span>
-                                        <span class="js">"85.592, 85.599"</span><span class="jp">,</span></span
-                                    ><br />
-                                    <span class="ps-3"
-                                        ><span class="jk">"materialy"</span><span class="jp">:</span>
-                                        <span class="js">"Zakaz kopiowania i rozpowszechniania bez zgody"</span
-                                        ><span class="jp">,</span></span
-                                    ><br />
-                                    <span class="ps-3"
-                                        ><span class="jk">"odwolanie"</span><span class="jp">:</span>
-                                        <span class="js"
-                                            >"Odwołanie &lt; 7 dni przed terminem wiąże się z koniecznością uiszczenia
-                                            100% opłaty"</span
-                                        ></span
-                                    ><br />
+                                    <span class="ps-3"><span class="jk">"nace"</span><span class="jp">:</span> <span class="js">"46.500, 47.400, 47.910"</span><span class="jp">,</span></span><br />
+                                    <span class="ps-3"><span class="jk">"zastrzezenie_wlasnosci"</span><span class="jp">:</span> <span class="js">"Sprzęt pozostaje własnością IT-JAY do momentu uiszczenia 100% ceny i kosztów"</span><span class="jp">,</span></span><br />
+                                    <span class="ps-3"><span class="jk">"gwarancja"</span><span class="jp">:</span> <span class="js">"B2C: ustawowa 2 lata; B2B: wyłącznie ewentualna gwarancja producenta (brak rękojmi IT-JAY)"</span></span><br />
+                                    <span class="jp">}</span><span class="jp">,</span>
+                                </p>
+                                <p>
+                                    <span class="jk">"modul_F_szkolenia"</span><span class="jp">:</span>
+                                    <span class="jp">{</span><br />
+                                    <span class="ps-3"><span class="jk">"nace"</span><span class="jp">:</span> <span class="js">"85.592, 85.599"</span><span class="jp">,</span></span><br />
+                                    <span class="ps-3"><span class="jk">"anulowanie"</span><span class="jp">:</span> <span class="js">"Materiały chronione prawem autorskim. Odwołanie &lt; 7 dni przed terminem wymaga zapłaty 100% kwoty"</span></span><br />
                                     <span class="jp">}</span>
                                 </p>
                             </div>
@@ -478,7 +335,7 @@
                     </div>
                 </section>
 
-                <!-- CZĘŚĆ 3 / ARTYKUŁ 4 & 5 -->
+                <!-- CZĘŚĆ 3: KWESTIE FINANSOWE, BACKUP I ODPOWIEDZIALNOŚĆ (ART. 4 - 8) -->
                 <section class="terminal-window mb-3 mb-md-4">
                     <div class="terminal-header d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -487,16 +344,18 @@
                                 <span class="traffic-dot dot-min"></span>
                                 <span class="traffic-dot dot-max"></span>
                             </div>
-                            <span class="prompt-sign">$</span> cat art_04_05_backup_platnosci.json
+                            <span class="prompt-sign">$</span> cat czesc_03_finanse_odpowiedzialnosc.json
                         </div>
-                        <div class="d-none d-sm-block text-secondary" style="font-size: 0.72rem">backup i finanse</div>
+                        <div class="d-none d-sm-block text-secondary" style="font-size: 0.72rem">
+                            część 3: finanse i kwestie prawne
+                        </div>
                     </div>
                     <div class="p-4">
                         <div class="d-flex align-items-center gap-2 mb-2">
                             <i class="fa-solid fa-shield-halved text-success"></i>
                             <span class="code-font small text-uppercase fw-semibold">
-                                <span class="text-warning">"Artykuły 4 &amp; 5":</span>
-                                <span class="text-white"> Kopie zapasowe, ceny i opóźnienia w płatnościach</span>
+                                <span class="text-warning">"Część 03":</span>
+                                <span class="text-white"> Kopie Zapasowe, Płatności, Windykacja &amp; Odpowiedzialność</span>
                             </span>
                         </div>
                         <div class="json-block mt-3">
@@ -504,36 +363,31 @@
                             <div class="json-row">
                                 <p>
                                     <span class="jk">"art_4_obowiazek_backupu"</span><span class="jp">:</span>
-                                    <span class="js"
-                                        >"Klient ponosi wyłączną odpowiedzialność za kopie zapasowe przed rozpoczęciem
-                                        prac przez IT-JAY. IT-JAY nie odpowiada za utratę danych."</span
-                                    ><span class="jp">,</span>
+                                    <span class="js">"Klient ponosi wyłączną odpowiedzialność za kopie zapasowe przed rozpoczęciem prac. Zero odpowiedzialności za utratę danych."</span><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"art_5_termin_faktur"</span><span class="jp">:</span>
-                                    <span class="js">"30 dni kalendarzowych od daty wystawienia"</span
-                                    ><span class="jp">,</span>
+                                    <span class="jk">"art_5_termin_platnosci"</span><span class="jp">:</span>
+                                    <span class="js">"30 dni kalendarzowych od daty wystawienia. Prawo do natychmiastowego wstrzymania usług (hostingu/dostępu) w razie zwłoki."</span><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"art_5_zwloka_b2b"</span><span class="jp">:</span>
-                                    <span class="js"
-                                        >"Odsetki ustawowe (ustawa 02/08/2002) + ryczałt 10% (min. 100 EUR)"</span
-                                    ><span class="jp">,</span>
+                                    <span class="jk">"art_5_opoznienia_b2b"</span><span class="jp">:</span>
+                                    <span class="js">"Odsetki ustawowe wg ustawy z 02/08/2002 + zryczałtowana rekompensata 10% (minimum 100,00 EUR)."</span><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"art_5_zwloka_b2c"</span><span class="jp">:</span>
-                                    <span class="js"
-                                        >"Bezpłatne przypomnienie (14 dni prolongaty); następnie odsetki i opłaty z
-                                        Księgi XIX Kodeksu Prawa Gospodarczego (20 EUR do 150 EUR; 30 EUR+10% do 500
-                                        EUR; 65 EUR+5% powyżej 500 EUR)"</span
-                                    ><span class="jp">,</span>
+                                    <span class="jk">"art_5_opoznienia_b2c"</span><span class="jp">:</span>
+                                    <span class="js">"Bezpłatne upomnienie z okresem karencji 14 dni; po tym terminie odsetki + zryczałtowane koszty wg Księgi XIX belgijskiego WER."</span><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"art_5_zawieszenie_uslug"</span><span class="jp">:</span>
-                                    <span class="js"
-                                        >"Prawo do wstrzymania usług (hosting, support) przy zaległościach
-                                        płatniczych"</span
-                                    >
+                                    <span class="jk">"art_6_odstapienie_od_umowy"</span><span class="jp">:</span>
+                                    <span class="js">"14 dni dla B2C przy umowach na odległość. Wyłączone przy oprogramowaniu na zamówienie, dedykowanych stronach i treściach cyfrowych."</span><span class="jp">,</span>
+                                </p>
+                                <p>
+                                    <span class="jk">"art_7_limit_odpowiedzialnosci"</span><span class="jp">:</span>
+                                    <span class="js">"Ograniczona do winy umyślnej i rażącego niedbalstwa. Maksymalnie do wartości faktury danego zlecenia / polisy OC. Szkody pośrednie wyłączone."</span><span class="jp">,</span>
+                                </p>
+                                <p>
+                                    <span class="jk">"art_8_sila_wyzsza_imprevisie"</span><span class="jp">:</span>
+                                    <span class="js">"Obejmuje awarie zewnętrznych chmur, ataki DDoS, brak prądu. Renegocjacje z tytułu nadzwyczajnej zmiany stosunków wg art. 5.74 belgijskiego Kodeksu Cywilnego."</span>
                                 </p>
                             </div>
                             <span class="jp">}</span>
@@ -541,62 +395,7 @@
                     </div>
                 </section>
 
-                <!-- CZĘŚĆ 3 / ARTYKUŁ 6, 7 & 8 -->
-                <section class="terminal-window mb-3 mb-md-4">
-                    <div class="terminal-header d-flex align-items-center justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <div class="traffic-dots">
-                                <span class="traffic-dot dot-close"></span>
-                                <span class="traffic-dot dot-min"></span>
-                                <span class="traffic-dot dot-max"></span>
-                            </div>
-                            <span class="prompt-sign">$</span> cat art_06_08_odstapienie_odpowiedzialnosc.json
-                        </div>
-                        <div class="d-none d-sm-block text-secondary" style="font-size: 0.72rem">
-                            prawa i odpowiedzialność
-                        </div>
-                    </div>
-                    <div class="p-4">
-                        <div class="d-flex align-items-center gap-2 mb-2">
-                            <i class="fa-solid fa-triangle-exclamation text-success"></i>
-                            <span class="code-font small text-uppercase fw-semibold">
-                                <span class="text-warning">"Artykuły 6, 7 &amp; 8":</span>
-                                <span class="text-white"> Odstąpienie, odpowiedzialność i siła wyższa</span>
-                            </span>
-                        </div>
-                        <div class="json-block mt-3">
-                            <span class="jp">{</span><br />
-                            <div class="json-row">
-                                <p>
-                                    <span class="jk">"art_6_odstapienie_b2c"</span><span class="jp">:</span>
-                                    <span class="js"
-                                        >"14 dni na odstąpienie od umowy zdalnej. Wyłączenia: usługi w pełni wykonane za
-                                        uprzednią zgodą, treści cyfrowe oraz produkty spersonalizowane na
-                                        zamówienie."</span
-                                    ><span class="jp">,</span>
-                                </p>
-                                <p>
-                                    <span class="jk">"art_7_odpowiedzialnosc"</span><span class="jp">:</span>
-                                    <span class="js"
-                                        >"Wyłącznie wina umyślna i rażące niedbalstwo. Brak odpowiedzialności za szkody
-                                        pośrednie (utrata zysków, ransomware, cyberataki). Suma ograniczona do kwoty
-                                        zafakturowanej lub kwoty z polisy OC."</span
-                                    ><span class="jp">,</span>
-                                </p>
-                                <p>
-                                    <span class="jk">"art_8_sila_wyzsza"</span><span class="jp">:</span>
-                                    <span class="js"
-                                        >"DDoS, przerwy zasilania, awarie dostawców chmury itp. Klauzula nadzwyczajnej
-                                        zmiany stosunków (art. 5.74 Nowego Kodeksu Cywilnego)."</span
-                                    >
-                                </p>
-                            </div>
-                            <span class="jp">}</span>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- CZĘŚĆ 3 / ARTYKUŁ 9, 10, 11 & 12 -->
+                <!-- CZĘŚĆ 4: POSTANOWIENIA KOŃCOWE (ART. 9 - 13) -->
                 <section class="terminal-window mb-4">
                     <div class="terminal-header d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -605,52 +404,42 @@
                                 <span class="traffic-dot dot-min"></span>
                                 <span class="traffic-dot dot-max"></span>
                             </div>
-                            <span class="prompt-sign">$</span> cat art_09_12_klauzule_koncowe.json
+                            <span class="prompt-sign">$</span> cat czesc_04_postanowienia_koncowe.json
                         </div>
                         <div class="d-none d-sm-block text-secondary" style="font-size: 0.72rem">
-                            poufność, rodo i jurysdykcja
+                            część 4: poufność i jurysdykcja
                         </div>
                     </div>
                     <div class="p-4">
                         <div class="d-flex align-items-center gap-2 mb-2">
                             <i class="fa-solid fa-gavel text-success"></i>
                             <span class="code-font small text-uppercase fw-semibold">
-                                <span class="text-warning">"Artykuły 9 - 12":</span>
-                                <span class="text-white"> Poufność, RODO, rozwiązanie i prawo właściwe</span>
+                                <span class="text-warning">"Część 04":</span>
+                                <span class="text-white"> Poufność, RODO, Rozwiązanie Umowy &amp; Sądownictwo</span>
                             </span>
                         </div>
                         <div class="json-block mt-3">
                             <span class="jp">{</span><br />
                             <div class="json-row">
                                 <p>
-                                    <span class="jk">"art_9_poufność_zakaz_przejmowania"</span
-                                    ><span class="jp">:</span>
-                                    <span class="js"
-                                        >"Obowiązek zachowania poufności (NDA). Zakaz przejmowania pracowników i
-                                        współpracowników przez 12 miesięcy pod rygorem kary równej 12-miesięcznemu
-                                        wynagrodzeniu brutto."</span
-                                    ><span class="jp">,</span>
+                                    <span class="jk">"art_9_poufnosc_zakaz_przejmowania"</span><span class="jp">:</span>
+                                    <span class="js">"Ścisła klauzula NDA. Zakaz przejmowania pracowników i freelancerów IT-JAY przez 12 miesięcy (kara umowna: 12 miesięcy wynagrodzenia brutto)."</span><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"art_10_rodo"</span><span class="jp">:</span>
-                                    <span class="js"
-                                        >"IT-JAY przetwarza dane jako Administrator. Przy bazach klienta stosuje się
-                                        osobną umowę powierzenia przetwarzania (DPA)."</span
-                                    ><span class="jp">,</span>
+                                    <span class="jk">"art_10_rodo_dpa"</span><span class="jp">:</span>
+                                    <span class="js">"IT-JAY jest Administratorem dla danych klientów. Odrębna umowa powierzenia (DPA) przy przetwarzaniu danych osób trzecich jako Procesor."</span><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"art_11_rozwiazanie"</span><span class="jp">:</span>
-                                    <span class="js"
-                                        >"Natychmiastowe rozwiązanie w przypadku upadłości, rażącego naruszenia umowy
-                                        lub podejrzenia działalności przestępczej."</span
-                                    ><span class="jp">,</span>
+                                    <span class="jk">"art_11_natychmiastowe_rozwiazanie"</span><span class="jp">:</span>
+                                    <span class="js">"Rozwiązanie z mocy prawa w razie upadłości, nienaprawionego naruszenia umowy (14 dni) lub nadużyć i ataków hakerskich."</span><span class="jp">,</span>
                                 </p>
                                 <p>
-                                    <span class="jk">"art_12_sad_i_prawo"</span><span class="jp">:</span>
-                                    <span class="js"
-                                        >"Wyłącznie prawo belgijskie (wyłączenie Konwencji wiedeńskiej CISG). Sądy
-                                        Okręgu Flandria Wschodnia, wydział Dendermonde."</span
-                                    >
+                                    <span class="jk">"art_12_klauzula_salwatoryjna"</span><span class="jp">:</span>
+                                    <span class="js">"Nieważność pojedynczego zapisu nie narusza pozostałych postanowień; zastąpienie klauzulą o zbliżonym celu gospodarczym."</span><span class="jp">,</span>
+                                </p>
+                                <p>
+                                    <span class="jk">"art_13_prawo_i_sad"</span><span class="jp">:</span>
+                                    <span class="js">"Wyłącznie prawo belgijskie (CISG wyłączone). Wyłączna właściwość sądów Okręgu Flandria Wschodnia, wydział w Dendermonde."</span>
                                 </p>
                             </div>
                             <span class="jp">}</span>
@@ -659,9 +448,9 @@
                 </section>
 
                 <!-- Przyciski akcji (ułożone obok siebie) -->
-                <div class="d-flex flex-wrap justify-content-center align-items-center gap-3 my-4">
+                <div id="downloads" class="d-flex flex-wrap justify-content-center align-items-center gap-3 my-4">
                     <!-- Przycisk pobierania dokumentu -->
-                    <a href="downloads/Alegemene-voorwaarden.pdf" class="btn btn-cli px-4 py-2" download>
+                    <a href="downloads/Algemene-voorwaarden.pdf" class="btn btn-cli px-4 py-2" download>
                         <i class="fa-solid fa-file-pdf text-warning me-2"></i> Pobierz PDF (niderlandzki)
                     </a>
 
